@@ -1112,8 +1112,8 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
             if (heroSection) {
                 const isSilverMode = localStorage.getItem('tradeSiteMode') === 'silver';
                 const bgImage = isSilverMode 
-                    ? '/trade-gold/wp-content/uploads/2026/01/gold_to_silver.png'
-                    : '/trade-gold/wp-content/uploads/2026/01/bg.png';
+                    ? '/wp-content/uploads/2026/01/gold_to_silver.png'
+                    : '/wp-content/uploads/2026/01/bg.png';
                 
                 heroSection.style.backgroundImage = `url('${bgImage}'), linear-gradient(135deg, var(--navy) 100%, var(--white) 15%)`;
                 console.log(`✅ Hero background updated to ${isSilverMode ? 'Silver' : 'Gold'} mode`);
@@ -1541,8 +1541,8 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
                         const heroSection = document.getElementById('heroSection');
                         if (heroSection) {
                             const bgImage = isSilverMode 
-                                ? '/trade-gold/wp-content/uploads/2026/01/silver_bars_1920x1080.png'
-                                : '/trade-gold/wp-content/uploads/2026/01/bg.png';
+                                ? '/wp-content/uploads/2026/01/silver_bars_1920x1080.png'
+                                : '/wp-content/uploads/2026/01/bg.png';
                             
                             heroSection.style.backgroundImage = `url('${bgImage}'), linear-gradient(135deg, var(--navy) 100%, var(--white) 15%)`;
                         }
