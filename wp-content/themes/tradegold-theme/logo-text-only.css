@@ -1,0 +1,57 @@
+/**
+ * Trade Gold - Logo Styling (Text Only)
+ * วางใน: Appearance → Customize → Additional CSS
+ */
+
+/* ========== Logo Text Only (ไม่มีรูป) ========== */
+
+/* Container ของ Logo */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+/* ซ่อนรูปภาพ logo ทั้งหมด */
+.logo-icon,
+.custom-logo {
+    display: none !important;
+}
+
+/* Trade = สีขาว */
+.logo-trade {
+    color: #ffffff;
+    font-weight: 700;
+}
+
+/* Gold = สีทอง */
+.logo-gold {
+    color: #EDBF43;
+    font-weight: 700;
+}
+
+/* Hover Effect */
+.logo:hover .logo-trade {
+    color: #ffffff;
+}
+
+.logo:hover .logo-gold {
+    color: #FFD700; /* สีทองสว่างขึ้นเมื่อ hover */
+}
+
+/* ========== Responsive ========== */
+
+@media (max-width: 768px) {
+    .logo {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        font-size: 1.2rem;
+    }
+}

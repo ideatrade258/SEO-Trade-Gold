@@ -1,0 +1,1685 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head><meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Inline Script: Load Theme Mode Early -->
+    <script>
+        // โหลด theme mode ทันทีเพื่อป้องกันการกระพริบ
+        (function() {
+            const currentMode = localStorage.getItem('tradeSiteMode');
+            
+            // เช็คว่ามีค่าและเป็น silver จริงๆ ถึงจะเปลี่ยนสี
+            if (currentMode === 'silver') {
+                document.documentElement.classList.add('silver-mode');
+                document.documentElement.classList.remove('gold-mode');
+            } else {
+                // ถ้าไม่มีหรือเป็น gold ให้ใช้ gold mode (ค่าเริ่มต้น)
+                document.documentElement.classList.add('gold-mode');
+                document.documentElement.classList.remove('silver-mode');
+                
+                // ตั้งค่าเป็น gold ถ้ายังไม่มีค่า
+                if (!currentMode) {
+                    localStorage.setItem('tradeSiteMode', 'gold');
+                }
+            }
+        })();
+    </script>
+    
+    <title>เทรดทอง – Trade Gold</title>
+<meta name="robots" content="max-image-preview:large">
+<link rel="alternate" type="application/rss+xml" title="เทรดทอง » Home Comments Feed" href="/sample-page/feed/">
+<link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="/wp-json/oembed/1.0/embed?url=%2F">
+<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="/wp-json/oembed/1.0/embed?url=%2F&amp;format=xml">
+<style id="wp-img-auto-sizes-contain-inline-css" type="text/css">
+img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
+/*# sourceURL=wp-img-auto-sizes-contain-inline-css */
+</style>
+<style id="wp-emoji-styles-inline-css" type="text/css">
+
+	img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+/*# sourceURL=wp-emoji-styles-inline-css */
+</style>
+<style id="wp-block-library-inline-css" type="text/css">
+:root{--wp-block-synced-color:#7a00df;--wp-block-synced-color--rgb:122,0,223;--wp-bound-block-color:var(--wp-block-synced-color);--wp-editor-canvas-background:#ddd;--wp-admin-theme-color:#007cba;--wp-admin-theme-color--rgb:0,124,186;--wp-admin-theme-color-darker-10:#006ba1;--wp-admin-theme-color-darker-10--rgb:0,107,160.5;--wp-admin-theme-color-darker-20:#005a87;--wp-admin-theme-color-darker-20--rgb:0,90,135;--wp-admin-border-width-focus:2px}@media (min-resolution:192dpi){:root{--wp-admin-border-width-focus:1.5px}}.wp-element-button{cursor:pointer}:root .has-very-light-gray-background-color{background-color:#eee}:root .has-very-dark-gray-background-color{background-color:#313131}:root .has-very-light-gray-color{color:#eee}:root .has-very-dark-gray-color{color:#313131}:root .has-vivid-green-cyan-to-vivid-cyan-blue-gradient-background{background:linear-gradient(135deg,#00d084,#0693e3)}:root .has-purple-crush-gradient-background{background:linear-gradient(135deg,#34e2e4,#4721fb 50%,#ab1dfe)}:root .has-hazy-dawn-gradient-background{background:linear-gradient(135deg,#faaca8,#dad0ec)}:root .has-subdued-olive-gradient-background{background:linear-gradient(135deg,#fafae1,#67a671)}:root .has-atomic-cream-gradient-background{background:linear-gradient(135deg,#fdd79a,#004a59)}:root .has-nightshade-gradient-background{background:linear-gradient(135deg,#330968,#31cdcf)}:root .has-midnight-gradient-background{background:linear-gradient(135deg,#020381,#2874fc)}:root{--wp--preset--font-size--normal:16px;--wp--preset--font-size--huge:42px}.has-regular-font-size{font-size:1em}.has-larger-font-size{font-size:2.625em}.has-normal-font-size{font-size:var(--wp--preset--font-size--normal)}.has-huge-font-size{font-size:var(--wp--preset--font-size--huge)}.has-text-align-center{text-align:center}.has-text-align-left{text-align:left}.has-text-align-right{text-align:right}.has-fit-text{white-space:nowrap!important}#end-resizable-editor-section{display:none}.aligncenter{clear:both}.items-justified-left{justify-content:flex-start}.items-justified-center{justify-content:center}.items-justified-right{justify-content:flex-end}.items-justified-space-between{justify-content:space-between}.screen-reader-text{border:0;clip-path:inset(50%);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px;word-wrap:normal!important}.screen-reader-text:focus{background-color:#ddd;clip-path:none;color:#444;display:block;font-size:1em;height:auto;left:5px;line-height:normal;padding:15px 23px 14px;text-decoration:none;top:5px;width:auto;z-index:100000}html :where(.has-border-color){border-style:solid}html :where([style*=border-top-color]){border-top-style:solid}html :where([style*=border-right-color]){border-right-style:solid}html :where([style*=border-bottom-color]){border-bottom-style:solid}html :where([style*=border-left-color]){border-left-style:solid}html :where([style*=border-width]){border-style:solid}html :where([style*=border-top-width]){border-top-style:solid}html :where([style*=border-right-width]){border-right-style:solid}html :where([style*=border-bottom-width]){border-bottom-style:solid}html :where([style*=border-left-width]){border-left-style:solid}html :where(img[class*=wp-image-]){height:auto;max-width:100%}:where(figure){margin:0 0 1em}html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:var(--wp-admin--admin-bar--height,0px)}@media screen and (max-width:600px){html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:0px}}
+
+/*# sourceURL=wp-block-library-inline-css */
+</style><style id="global-styles-inline-css" type="text/css">
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgb(6,147,227) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgb(252,185,0) 0%,rgb(255,105,0) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgb(255,105,0) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgb(255, 255, 255), 6px 6px rgb(0, 0, 0);--wp--preset--shadow--crisp: 6px 6px 0px rgb(0, 0, 0);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+/*# sourceURL=global-styles-inline-css */
+</style>
+
+<style id="classic-theme-styles-inline-css" type="text/css">
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+/*# sourceURL=/wp-includes/css/classic-themes.min.css */
+</style>
+<link rel="stylesheet" id="tradegold-style-css" href="/wp-content/themes/tradegold-theme/style.css?ver=3.0" type="text/css" media="all">
+<link rel="stylesheet" id="fullwidth-template-no-sidebar-css" href="/wp-content/plugins/fullwidth-templates/assets/css/fullwidth-template-no-sidebar.css?ver=6.9" type="text/css" media="all">
+<script type="text/javascript" src="/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
+<script type="text/javascript" src="/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js"></script>
+<link rel="https://api.w.org/" href="/wp-json/"><link rel="alternate" title="JSON" type="application/json" href="/wp-json/wp/v2/pages/2"><link rel="EditURI" type="application/rsd+xml" title="RSD" href="/xmlrpc.php?rsd">
+<meta name="generator" content="WordPress 6.9">
+<link rel="canonical" href="/">
+<link rel="shortlink" href="/">
+<link rel="icon" href="/wp-content/uploads/2026/01/logo.jpg" sizes="32x32">
+<link rel="icon" href="/wp-content/uploads/2026/01/logo.jpg" sizes="192x192">
+<link rel="apple-touch-icon" href="/wp-content/uploads/2026/01/logo.jpg">
+<meta name="msapplication-TileImage" content="/wp-content/uploads/2026/01/logo.jpg">
+		<style type="text/css" id="wp-custom-css">
+			.logo-image {
+    display: none !important;
+}		</style>
+		</head>
+
+<body class="home wp-singular page-template page-template-template-page-builder-no-sidebar page-template-template-page-builder-no-sidebar-php page page-id-2 wp-theme-tradegold-theme fpt-template fpt-template-tradegold-theme">
+
+<div id="page" class="site">
+    
+    <!-- Header Navigation -->
+    <header class="header">
+        <div class="nav-container">
+            <!-- Logo -->
+            <a href="/" class="logo-link">
+                <div class="logo">
+                    <img src="/wp-content/themes/tradegold-theme/images/TG-logo.png" alt="Trade Gold Logo" class="logo-image">
+                    <div class="logo-text">
+                        <span class="logo-trade">Trade</span>
+                        <span class="logo-gold">Gold</span>
+                    </div>
+                </div>
+            </a>
+            
+            <!-- Right Section: Search Bar + Hamburger -->
+            <div class="nav-right-section">
+                <!-- Search Bar (Desktop) -->
+                <div class="search-bar-container desktop-search">
+                    <div class="search-bar">
+                        <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <path d="m21 21-4.35-4.35"></path>
+                        </svg>
+                        <input type="search" id="searchInput" placeholder="ค้นหาบทความ..." autocomplete="off">
+                        <button class="clear-search" id="clearSearch" style="display: none;">✕</button>
+                    </div>
+                    <div class="search-dropdown" id="searchDropdown"></div>
+                </div>
+                
+                <!-- Hamburger Menu Button (Mobile/Tablet) -->
+                <button class="hamburger-menu" id="hamburgerMenu" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+            
+            <!-- Navigation Menu (Desktop) -->
+            <nav class="main-navigation"><ul id="menu-menu-1" class="nav-menu desktop-menu"><li id="menu-item-148" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-2 current_page_item menu-item-148"><a href="/" aria-current="page">Home</a></li>
+<li id="menu-item-155" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-155"><a href="/market-trade-gold/">Market</a></li>
+<li id="menu-item-150" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-150"><a href="/blog/">Blog</a></li>
+<li id="menu-item-153" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-153"><a href="/faq/">FAQ</a></li>
+<li id="menu-item-149" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-149"><a href="/about-us/">About Us</a></li>
+<li id="menu-item-151" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-151"><a href="/contact/">Contact</a></li>
+</ul></nav>            
+            <!-- Sign Up Button (Desktop) -->
+            <a href="https://forms.gle/39UFCgrYbdfTVmhZ9" target="_blank" rel="noopener" class="signup-btn desktop-signup">
+                เปิดบัญชี            </a>
+        </div>
+        
+        <!-- Mobile Menu Dropdown -->
+        <div class="mobile-menu-dropdown" id="mobileMenuDropdown">
+            <!-- Close Button -->
+            <button class="mobile-menu-close" id="mobileMenuClose" aria-label="Close Menu">✕</button>
+            
+            <!-- Search Bar (Mobile) -->
+            <div class="search-bar-container mobile-search">
+                <div class="search-bar">
+                    <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <path d="m21 21-4.35-4.35"></path>
+                    </svg>
+                    <input type="search" id="searchInputMobile" placeholder="ค้นหาบทความ..." autocomplete="off">
+                    <button class="clear-search" id="clearSearchMobile" style="display: none;">✕</button>
+                </div>
+                <div class="search-dropdown" id="searchDropdownMobile"></div>
+            </div>
+            
+            <!-- Navigation Menu (Mobile) -->
+            <nav class="mobile-navigation"><ul id="menu-menu-2" class="nav-menu mobile-menu"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-2 current_page_item menu-item-148"><a href="/" aria-current="page">Home</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-155"><a href="/market-trade-gold/">Market</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-150"><a href="/blog/">Blog</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-153"><a href="/faq/">FAQ</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-149"><a href="/about-us/">About Us</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-151"><a href="/contact/">Contact</a></li>
+</ul></nav>            
+            <!-- Sign Up Button (Mobile) -->
+            <a href="https://forms.gle/39UFCgrYbdfTVmhZ9" target="_blank" rel="noopener" class="signup-btn mobile-signup">
+                เปิดบัญชี            </a>
+        </div>
+    </header>
+    
+    <!-- Main Content -->
+    <main id="content" class="site-main">
+
+
+
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Trade Gold – ศูนย์ข้อมูลทองคำ</title>
+    <link rel="icon" type="image/png" href="/image/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700;900&amp;display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box
+        }
+
+        :root {
+            --gold-primary: #EDBF43;
+            --gold-dark: #B8860B;
+            --gold-light: #FFD700;
+            --navy: #1E3A8A;
+            --navy-dark: #172d69;
+            --sky-blue: #87CEEB;
+            --sky-light: #A3DFF8;
+            --white: #ffffff;
+            --text-dark: #1a1a1a;
+            --shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            --tag-beginner: #3B82F6;
+            --tag-intermediate: #EDBF43;
+            --tag-professional: #EF4444
+        }
+
+        body {
+            font-family: 'Kanit', sans-serif;
+            background: linear-gradient(180deg, var(--sky-light) 0%, var(--white) 100%);
+            color: var(--text-dark);
+            line-height: 1.6
+        }
+
+        .hero {
+            background: url('/wp-content/uploads/2026/01/bg.png') center center/cover no-repeat, linear-gradient(135deg, var(--navy) 100%, var(--white) 15%);
+            color: var(--white);
+            padding: 3rem 2rem 1.5rem 2rem;
+            position: relative;
+            overflow: hidden
+        }
+
+        .hero::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: var(--navy);
+            opacity: 60%;
+            z-index: 0
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 50%;
+            height: 100%;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="80" cy="30" r="40" fill="rgba(212,175,55,0.1)"/><circle cx="90" cy="70" r="30" fill="rgba(255,215,0,0.1)"/>');
+            background-size: cover;
+            z-index: 1
+        }
+
+        .hero-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: relative;
+            z-index: 2
+        }
+
+        .hero-content h1 {
+            font-family: 'Kanit', serif;
+            font-size: 7rem;
+            font-weight: 900;
+            margin-bottom: 5px;
+            color: var(--gold-light)
+        }
+
+        .hero-content p {
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            opacity: 0.9
+        }
+
+        .hero-btn {
+            background: var(--gold-primary);
+            color: var(--text-dark);
+            padding: 0.75rem 2rem;
+            border-radius: 30px;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-weight: 600;
+            transition: all 0.3s;
+            animation: pulse 2s infinite
+        }
+
+        .hero-btn:hover {
+            background: var(--gold-light);
+            color: var(--text-dark);
+            transform: scale(1.05)
+        }
+
+        @keyframes pulse {
+            0%, 100% {
+                box-shadow: 0 0 0 0 rgba(212, 175, 55, 0.7)
+            }
+            50% {
+                box-shadow: 0 0 0 10px rgba(212, 175, 55, 0)
+            }
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 2rem
+        }
+
+        .section-header {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 2rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 3px solid var(--gold-primary)
+        }
+
+        .section-header h2 {
+            font-family: 'Kanit', serif;
+            font-size: 1.8rem;
+            color: var(--navy)
+        }
+
+        .section-badge {
+            background: var(--navy);
+            color: var(--white);
+            padding: 0.5rem 1.5rem;
+            border-radius: 25px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 8px rgba(30, 58, 138, 0.3);
+            text-decoration: none;
+            display: inline-block
+        }
+
+        .section-badge:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(30, 58, 138, 0.5);
+            background: var(--navy-dark)
+        }
+
+        .gold-price-section {
+            background: var(--white);
+            padding: 1.19rem;
+            border-radius: 11.9px;
+            box-shadow: var(--shadow);
+            margin-bottom: 1.785rem
+        }
+
+        .chart-section {
+            margin-top: 1.05rem
+        }
+
+        .chart-and-widgets-wrapper {
+            display: flex;
+            flex-direction: column;
+            gap: 1.05rem
+        }
+
+        .main-chart-container {
+            background: var(--white);
+            border-radius: 10.5px;
+            overflow: hidden;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+            min-height: 350px;
+            height: 425px;
+            width: 100%
+        }
+
+        .floating-sidebar {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(196px, 1fr));
+            gap: 1.05rem
+        }
+
+        .country-dropdown-container {
+            margin-left: auto;
+            padding: 0;
+            position: relative;
+            display: inline-block
+        }
+
+        .custom-dropdown {
+            position: relative;
+            width: 220px
+        }
+
+        .custom-dropdown-selected {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 0.75rem 1.25rem;
+            background: var(--navy);
+            color: var(--white);
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 1rem;
+            font-family: 'Kanit', sans-serif;
+            font-weight: 500;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s
+        }
+
+        .custom-dropdown-selected:hover {
+            background: var(--navy-dark)
+        }
+
+        .dropdown-flag {
+            width: 40px;
+            height: 40px;
+            object-fit: cover;
+            border-radius: 50%;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+            border: 2px solid rgba(237, 191, 67, 0.3)
+        }
+
+        .dropdown-arrow {
+            transition: transform 0.3s
+        }
+
+        .custom-dropdown.active .dropdown-arrow {
+            transform: rotate(180deg)
+        }
+
+        .custom-dropdown-options {
+            position: absolute;
+            top: calc(100%+5px);
+            left: 0;
+            right: 0;
+            background: var(--white);
+            border-radius: 10px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+            overflow: hidden;
+            max-height: 0;
+            opacity: 0;
+            transition: all 0.3s;
+            z-index: 100
+        }
+
+        .custom-dropdown.active .custom-dropdown-options {
+            max-height: 500px;
+            opacity: 1
+        }
+
+        .custom-option {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 0.85rem 1.25rem;
+            cursor: pointer;
+            color: var(--navy);
+            font-size: 1rem;
+            transition: background 0.2s
+        }
+
+        .custom-option img {
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid rgba(237, 191, 67, 0.3);
+            box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1)
+        }
+
+        .custom-option:hover {
+            background: #f8f9fa
+        }
+
+        .custom-option.selected {
+            background: var(--gold-primary);
+            color: var(--white);
+            font-weight: 600
+        }
+
+        .tv-widget-item {
+            background: var(--white);
+            border-radius: 10.5px;
+            overflow: hidden;
+            box-shadow: 0 1.4px 7px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s, box-shadow 0.3s;
+            min-height: 84px
+        }
+
+        .tv-widget-item:hover {
+            transform: translateY(-3.5px);
+            box-shadow: 0 3.5px 14px rgba(212, 175, 55, 0.2)
+        }
+
+        .related-news {
+            margin-bottom: 3rem
+        }
+
+        .related-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1.5rem;
+            margin-top: 1.5rem
+        }
+
+        .related-card {
+            background: var(--white);
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: all 0.3s;
+            display: block;
+            cursor: pointer
+        }
+
+        .related-card:hover {
+            transform: scale(1.02)
+        }
+
+        .related-content {
+            display: flex;
+            gap: 1.5rem;
+            padding: 1.5rem
+        }
+
+        .related-image {
+            width: 500px;
+            height: 259.2px;
+            border-radius: 10px;
+            background: linear-gradient(135deg, #ff6b6b 0%, #ee5a6f 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 6rem;
+            flex-shrink: 0;
+            position: relative
+        }
+
+        .fallback-emoji {
+            font-size: 6rem;
+            position: absolute;
+            z-index: 1;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .related-text {
+            flex: 1;
+            display: flex;
+            flex-direction: column
+        }
+
+        .related-title {
+            font-weight: 700;
+            font-size: 1.2rem;
+            margin-bottom: 0.75rem;
+            color: var(--navy)
+        }
+
+        .related-description {
+            font-size: 0.95rem;
+            color: #666;
+            line-height: 1.6;
+            flex: 1
+        }
+
+        .related-category {
+            position: absolute;
+            top: 12px;
+            right: 12px;
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            background: var(--navy-dark);
+            color: var(--white);
+            border-radius: 25px;
+            font-size: 0.9rem;
+            font-weight: 700;
+            white-space: nowrap;
+            box-shadow: 0 3px 12px rgba(0, 0, 0, 0.25);
+            z-index: 11;
+            letter-spacing: 0.3px;
+        }
+
+        /* ✅ CSS สำหรับแท็กใน meta (ด้านล่างการ์ด) */
+        .meta-tag {
+            display: inline-block;
+            padding: 0.4rem 0.9rem;
+            color: var(--white);
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 700;
+            white-space: nowrap;
+            letter-spacing: 0.3px;
+        }
+
+        .meta-tag.beginner {
+            background: linear-gradient(135deg, #3B82F6 0%, #2563EB 100%);
+        }
+
+        .meta-tag.intermediate {
+            background: linear-gradient(135deg, #EDBF43 0%, #D4AF37 100%);
+        }
+
+        .meta-tag.professional {
+            background: linear-gradient(135deg, #EF4444 0%, #DC2626 100%);
+        }
+
+        .meta-tag-small {
+            display: inline-block;
+            padding: 0.3rem 0.7rem;
+            color: var(--white);
+            border-radius: 15px;
+            font-size: 0.75rem;
+            font-weight: 700;
+            white-space: nowrap;
+            letter-spacing: 0.3px;
+        }
+
+        .meta-tag-small.beginner {
+            background: linear-gradient(135deg, #3B82F6 0%, #2563EB 100%);
+        }
+
+        .meta-tag-small.intermediate {
+            background: linear-gradient(135deg, #EDBF43 0%, #D4AF37 100%);
+        }
+
+        .meta-tag-small.professional {
+            background: linear-gradient(135deg, #EF4444 0%, #DC2626 100%);
+        }
+
+        .related-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 1rem;
+            margin-top: auto;
+            border-top: 1px solid #e5e7eb;
+            font-size: 0.85rem;
+            color: #666
+        }
+
+        .small-news-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+            grid-auto-rows: 1fr;
+        }
+
+        .small-news-card {
+            background: var(--white);
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: all 0.3s;
+            cursor: pointer;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+
+        .small-news-card:hover {
+            transform: translateY(-5px)
+        }
+
+        .small-news-image {
+            width: 100%;
+            height: 150px;
+            background: linear-gradient(135deg, var(--gold-primary) 0%, var(--gold-dark) 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.5rem;
+            position: relative
+        }
+
+        .small-news-content {
+            padding: 1rem;
+            display: flex;
+            flex-direction: column;
+            min-height: 200px;
+            height: 100%;
+        }
+
+        .small-news-title {
+            font-weight: 700;
+            font-size: 0.95rem;
+            margin-bottom: 0.5rem;
+            color: var(--navy);
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            min-height: 2.8rem;
+        }
+
+        .small-news-excerpt {
+            font-size: 0.85rem;
+            color: #666;
+            line-height: 1.5;
+            margin-bottom: 0.5rem;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            flex: 1;
+            min-height: 3.825rem;
+        }
+
+        .small-news-category {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            padding: 0.4rem 0.85rem;
+            background: var(--navy-dark);
+            color: var(--white);
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 700;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.25);
+            z-index: 11;
+            letter-spacing: 0.3px;
+        }
+
+        .small-news-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 0.75rem;
+            margin-top: auto;
+            border-top: 1px solid #e5e7eb;
+            font-size: 0.8rem;
+            color: #666
+        }
+
+        .gold-types {
+            margin-top: 4rem;
+            margin-bottom: 3rem
+        }
+
+        .types-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1.5rem;
+            margin-top: 1.5rem
+        }
+
+        .type-card {
+            background: var(--white);
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: var(--shadow);
+            text-align: center;
+            transition: all 0.3s;
+            border: 3px solid transparent
+        }
+
+        .type-card:hover {
+            border-color: var(--gold-primary);
+            transform: translateY(-10px)
+        }
+
+        .type-icon {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto 1rem;
+            background: var(--sky-light);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--navy)
+        }
+
+        .type-title {
+            font-weight: 700;
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+            color: var(--navy)
+        }
+
+        .type-subtitle {
+            font-size: 0.95rem;
+            color: var(--gold-dark);
+            font-weight: 600;
+            margin-bottom: 0.75rem
+        }
+
+        .type-description {
+            font-size: 0.85rem;
+            color: #666;
+            line-height: 1.5
+        }
+
+        .cta-section {
+            background: linear-gradient(135deg, var(--navy) 0%, var(--navy) 100%);
+            color: var(--white);
+            padding: 4rem 2rem;
+            border-radius: 20px;
+            text-align: center;
+            margin-bottom: 1.5rem;
+            position: relative;
+            overflow: hidden
+        }
+
+        .cta-content h2 {
+            font-family: 'Kanit', serif;
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            color: var(--gold-light)
+        }
+
+        .cta-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center
+        }
+
+        .qr-code {
+            display: inline-block;
+            padding: 1.4rem;
+            background: var(--white);
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3)
+        }
+
+        .qr-code img {
+            max-width: 210px;
+            width: 100%;
+            height: auto;
+            display: block
+        }
+
+        .cta-btn {
+            background: var(--gold-primary);
+            color: var(--text-dark);
+            padding: 1rem 3rem;
+            border-radius: 30px;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-weight: 700;
+            font-size: 1.1rem;
+            transition: all 0.3s;
+            margin-top: 1.5rem
+        }
+
+        .cta-btn:hover {
+            background: var(--gold-light);
+            transform: scale(1.05)
+        }
+
+        @media (max-width:1024px) {
+            .small-news-grid, .types-grid {
+                grid-template-columns: repeat(2, 1fr)
+            }
+        }
+
+        @media (max-width:768px) {
+            .hero-content h1 {
+                font-size: 4rem
+            }
+            .hero-content p {
+                font-size: 1.5rem
+            }
+            .section-header {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 0.5rem
+            }
+            .country-dropdown-container {
+                margin-left: 0;
+                width: 100%
+            }
+            .small-news-grid, .types-grid {
+                grid-template-columns: 1fr
+            }
+            .related-content {
+                flex-direction: column
+            }
+            .related-image {
+                width: 100%
+            }
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg) }
+            100% { transform: rotate(360deg) }
+        }
+    </style>
+
+
+
+    <div id="navbar-placeholder"></div>
+
+    <section class="hero" id="heroSection">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 id="heroBannerTitle">Trade Gold</h1>
+                <p>สรุปข้อมูลทองคำแบบเข้าใจง่าย เหมาะสำหรับนักลงทุนทุกระดับ</p>
+                <a href="https://forms.gle/39UFCgrYbdfTVmhZ9" target="_blank" rel="noopener" class="hero-btn">
+                    เปิดบัญชี ▶
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+        <section class="gold-price-section">
+            <div class="section-header">
+                <h2>ราคาทองคำวันนี้</h2>
+                <a href="/market" class="section-badge">ดูทั้งหมด ▶</a>
+
+                <div class="country-dropdown-container">
+                    <div class="custom-dropdown" id="customDropdown">
+                        <div class="custom-dropdown-selected" id="dropdownSelected">
+                            <img decoding="async" loading="lazy" src="https://hatscripts.github.io/circle-flags/flags/us.svg" alt="USA" class="dropdown-flag">
+                            <span>USA</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewbox="0 0 12 12" class="dropdown-arrow">
+                                <path fill="#ffffff" d="M6 9L1 4h10z"></path>
+                            </svg>
+                        </div>
+                        <div class="custom-dropdown-options" id="dropdownOptions">
+                            <div class="custom-option" data-value="USA" data-flag="us">
+                                <img decoding="async" loading="lazy" src="https://hatscripts.github.io/circle-flags/flags/us.svg" alt="USA" class="dropdown-flag">
+                                <span>USA</span>
+                            </div>
+                            <div class="custom-option" data-value="Thailand" data-flag="th">
+                                <img decoding="async" loading="lazy" src="https://hatscripts.github.io/circle-flags/flags/th.svg" alt="Thailand" class="dropdown-flag">
+                                <span>Thailand</span>
+                            </div>
+                            <div class="custom-option" data-value="UK" data-flag="gb">
+                                <img decoding="async" loading="lazy" src="https://hatscripts.github.io/circle-flags/flags/gb.svg" alt="UK" class="dropdown-flag">
+                                <span>UK</span>
+                            </div>
+                            <div class="custom-option" data-value="Europe" data-flag="eu">
+                                <img decoding="async" loading="lazy" src="https://hatscripts.github.io/circle-flags/flags/eu.svg" alt="Europe" class="dropdown-flag">
+                                <span>Europe</span>
+                            </div>
+                            <div class="custom-option" data-value="Japan" data-flag="jp">
+                                <img decoding="async" loading="lazy" src="https://hatscripts.github.io/circle-flags/flags/jp.svg" alt="Japan" class="dropdown-flag">
+                                <span>Japan</span>
+                            </div>
+                            <div class="custom-option" data-value="Hong Kong" data-flag="hk">
+                                <img decoding="async" loading="lazy" src="https://hatscripts.github.io/circle-flags/flags/hk.svg" alt="Hong Kong" class="dropdown-flag">
+                                <span>Hong Kong</span>
+                            </div>
+                            <div class="custom-option" data-value="Shanghai" data-flag="cn">
+                                <img decoding="async" loading="lazy" src="https://hatscripts.github.io/circle-flags/flags/cn.svg" alt="Shanghai" class="dropdown-flag">
+                                <span>Shanghai</span>
+                            </div>
+                            <div class="custom-option" data-value="Singapore" data-flag="sg">
+                                <img decoding="async" loading="lazy" src="https://hatscripts.github.io/circle-flags/flags/sg.svg" alt="Singapore" class="dropdown-flag">
+                                <span>Singapore</span>
+                            </div>
+                        </div>
+                    </div>
+                    <select id="countryDropdown" style="display: none;">
+                        <option value="USA" selected>USA</option>
+                        <option value="Thailand">Thailand</option>
+                        <option value="UK">UK</option>
+                        <option value="Europe">Europe</option>
+                        <option value="Japan">Japan</option>
+                        <option value="Hong Kong">Hong Kong</option>
+                        <option value="Shanghai">Shanghai</option>
+                        <option value="Singapore">Singapore</option>
+                    </select>
+                </div>
+            </div>
+
+            <section class="chart-section">
+                <div class="chart-and-widgets-wrapper">
+                    <div class="main-chart-container" id="mainChartContainer">
+                        <div class="tradingview-widget-container" style="width:100%; height:100%;">
+                            <div class="tradingview-widget-container__widget"></div>
+                            <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-symbol-overview.js" async>
+                            {
+                                "symbols": [["OANDA:XAUUSD|ALL"]],
+                                "chartOnly": false,
+                                "width": "100%",
+                                "height": "100%",
+                                "locale": "en",
+                                "colorTheme": "light",
+                                "autosize": true,
+                                "showVolume": false,
+                                "scalePosition": "right",
+                                "scaleMode": "Normal",
+                                "fontFamily": "-apple-system, BlinkMacSystemFont, Trebuchet MS, Roboto, Ubuntu, sans-serif",
+                                "fontSize": "10",
+                                "noTimeScale": false,
+                                "valuesTracking": "1",
+                                "changeMode": "price-and-percent",
+                                "chartType": "area",
+                                "lineWidth": 2,
+                                "lineType": 0,
+                                "dateRanges": ["1d|1", "1m|30", "3m|60", "12m|1D", "60m|1W", "all|1M"]
+                            }
+                            </script>
+                        </div>
+                    </div>
+
+                    <div class="floating-sidebar">
+                        <div class="tradingview-widget-container tv-widget-item" id="widget0">
+                            <div class="tradingview-widget-container__widget"></div>
+                            <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-single-quote.js" async>
+                            { "symbol": "PEPPERSTONE:XAUTHB", "colorTheme": "light", "isTransparent": false, "locale": "en", "width": "100%", "height": 100 }
+                            </script>
+                        </div>
+
+                        <div class="tradingview-widget-container tv-widget-item" id="widget1">
+                            <div class="tradingview-widget-container__widget"></div>
+                            <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-single-quote.js" async>
+                            { "symbol": "OANDA:XAUUSD", "colorTheme": "light", "isTransparent": false, "locale": "en", "width": "100%", "height": 100 }
+                            </script>
+                        </div>
+
+                        <div class="tradingview-widget-container tv-widget-item" id="widget3">
+                            <div class="tradingview-widget-container__widget"></div>
+                            <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-single-quote.js" async>
+                            { "symbol": "FOREXCOM:USDTHB", "colorTheme": "light", "isTransparent": false, "locale": "en", "width": "100%", "height": 100 }
+                            </script>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <section class="related-news">
+            <div class="section-header">
+                <h2>คู่มือสำหรับมือใหม่ที่ต้องการเริ่มลงทุนในทองคำ</h2>
+                <a href="/blog" class="section-badge">ดูทั้งหมด ▶</a>
+            </div>
+            <div id="guideGrid" class="related-grid">
+                <div class="related-card">
+                    <div class="related-content" style="justify-content: center; align-items: center; min-height: 200px;">
+                        <div style="text-align: center;">
+                            <div style="border: 4px solid #f3f3f3; border-top: 4px solid #EDBF43; border-radius: 50%; width: 50px; height: 50px; animation: spin 1s linear infinite; margin: 0 auto 1rem;"></div>
+                            <p style="color: #666;">กำลังโหลดข้อมูล…</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div id="smallNewsGrid" class="small-news-grid">
+            <div class="small-news-card" style="grid-column: 1 / -1;">
+                <div class="small-news-content" style="text-align: center; padding: 2rem;">
+                    <div style="border: 4px solid #f3f3f3; border-top: 4px solid #EDBF43; border-radius: 50%; width: 40px; height: 40px; animation: spin 1s linear infinite; margin: 0 auto 1rem;"></div>
+                    <p style="color: #666; margin: 0;">กำลังโหลดข้อมูล…</p>
+                </div>
+            </div>
+        </div>
+
+        <section class="gold-types">
+            <div class="section-header">
+                <h2>ประเภทการเทรดทอง (Gold Types)</h2>
+            </div>
+            <div class="types-grid">
+                <div class="type-card">
+                    <div class="type-icon">S</div>
+                    <h3 class="type-title">Spot Gold</h3>
+                    <p class="type-subtitle">ทองคำแท่ง ทองคำทันที</p>
+                    <p class="type-description">ซื้อขายทองคำที่ราคาตลาดในปัจจุบัน เหมาะสำหรับนักลงทุนระยะยาว</p>
+                </div>
+                <div class="type-card">
+                    <div class="type-icon">T</div>
+                    <h3 class="type-title">Thai Gold Bullion</h3>
+                    <p class="type-subtitle">ทองคำแท่ง 96.5%</p>
+                    <p class="type-description">ทองคำแท่งมาตรฐานไทย ความบริสุทธิ์ 96.5% เหมาะสำหรับการออม</p>
+                </div>
+                <div class="type-card">
+                    <div class="type-icon">F</div>
+                    <h3 class="type-title">Futures (TFEX)</h3>
+                    <p class="type-subtitle">สัญญาซื้อขายล่วงหน้า</p>
+                    <p class="type-description">การซื้อขายทองคำในตลาดล่วงหน้า ใช้ทองคำลงทุนน้อยแต่มีความเสี่ยงสูง</p>
+                </div>
+                <div class="type-card">
+                    <div class="type-icon">E</div>
+                    <h3 class="type-title">Gold ETF</h3>
+                    <p class="type-subtitle">กองทุนรวมทองคำ</p>
+                    <p class="type-description">การลงทุนในทองคำผ่านกองทุนรวม สะดวก มีสภาพคล่องสูง</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <div class="cta-content">
+                <h2>เปิดพอร์ตง่าย เพียงปลายนิ้ว</h2>
+                <div class="qr-code">
+                    <img decoding="async" loading="lazy" src="/wp-content/uploads/2026/01/qr-code.png" alt="QR Code เปิดบัญชี">
+                </div>
+                <a href="https://forms.gle/39UFCgrYbdfTVmhZ9" target="_blank" rel="noopener" class="cta-btn">เปิดบัญชี ▶</a>
+            </div>
+        </section>
+    </div>
+
+    <div id="footer-placeholder"></div>
+    <div id="switch-button-placeholder"></div>
+
+    <script>
+    (function() {
+        console.log('🚀 Immediate text replacement started');
+        
+        const isSilverMode = localStorage.getItem('tradeSiteMode') === 'silver';
+        console.log('📍 Current mode:', isSilverMode ? 'SILVER' : 'GOLD');
+        
+        // ✅ Update hero background immediately
+        const updateHeroBackground = () => {
+            const heroSection = document.getElementById('heroSection');
+            if (heroSection) {
+                const isSilverMode = localStorage.getItem('tradeSiteMode') === 'silver';
+                const bgImage = isSilverMode 
+                    ? '/trade-gold/wp-content/uploads/2026/01/gold_to_silver.png'
+                    : '/trade-gold/wp-content/uploads/2026/01/bg.png';
+                
+                heroSection.style.backgroundImage = `url('${bgImage}'), linear-gradient(135deg, var(--navy) 100%, var(--white) 15%)`;
+                console.log(`✅ Hero background updated to ${isSilverMode ? 'Silver' : 'Gold'} mode`);
+            }
+        };
+        
+        // เรียกใช้ทันที
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', updateHeroBackground);
+        } else {
+            updateHeroBackground();
+        }
+        
+        window.addEventListener('load', updateHeroBackground);
+        
+        if (isSilverMode) {
+            // ✅ Update banner immediately
+            const updateBanner = () => {
+                const banner = document.getElementById('heroBannerTitle');
+                if (banner && banner.textContent !== 'Trade Silver') {
+                    banner.textContent = 'Trade Silver';
+                    console.log('✅ Banner updated to Silver');
+                }
+            };
+            
+            updateBanner();
+            
+            if (document.readyState === 'loading') {
+                document.addEventListener('DOMContentLoaded', updateBanner);
+            }
+            
+            window.addEventListener('load', updateBanner);
+            
+            // ✅ Replace all text immediately
+            const replaceAllText = () => {
+                console.log('🔄 Replacing text...');
+                
+                const textReplacements = {
+                    'Trade Gold': 'Trade Silver',
+                    'ทองคำ': 'เงิน',
+                    'ทอง': 'เงิน',
+                    'Gold': 'Silver'
+                };
+                
+                const walker = document.createTreeWalker(
+                    document.body,
+                    NodeFilter.SHOW_TEXT,
+                    {
+                        acceptNode: function(node) {
+                            if (node.parentElement.tagName === 'SCRIPT' || 
+                                node.parentElement.tagName === 'STYLE') {
+                                return NodeFilter.FILTER_REJECT;
+                            }
+                            return NodeFilter.FILTER_ACCEPT;
+                        }
+                    }
+                );
+                
+                let node;
+                let count = 0;
+                while (node = walker.nextNode()) {
+                    let text = node.textContent;
+                    let modified = false;
+                    
+                    for (const [oldText, newText] of Object.entries(textReplacements)) {
+                        if (text.includes(oldText)) {
+                            text = text.replace(new RegExp(oldText, 'g'), newText);
+                            modified = true;
+                            count++;
+                        }
+                    }
+                    
+                    if (modified) {
+                        node.textContent = text;
+                    }
+                }
+                
+                console.log(`✅ Text replacement completed: ${count} replacements made`);
+            };
+            
+            replaceAllText();
+            
+            if (document.readyState === 'loading') {
+                document.addEventListener('DOMContentLoaded', replaceAllText);
+            }
+            
+            window.addEventListener('load', () => {
+                setTimeout(replaceAllText, 100);
+                setTimeout(replaceAllText, 500);
+            });
+        }
+    })();
+    </script>
+
+    <script>
+        const GUIDE_API_URL = 'https://script.google.com/macros/s/AKfycbzTIMUcEl49nXGRMQk_L_TI1XFD28gUNyMt0IXKVWnDiPnV5GorIEEPMswp-Gsv0r1Bhw/exec';
+        window.GUIDE_API_URL = GUIDE_API_URL;
+
+        // ✅ ฟังก์ชันสำหรับกำหนดสีของแท็ก
+        function getTagClass(tag) {
+            if (!tag) return '';
+            const tagLower = tag.toLowerCase().trim();
+            if (tagLower === 'beginner') return 'beginner';
+            if (tagLower === 'intermediate') return 'intermediate';
+            if (tagLower === 'professional') return 'professional';
+            return 'beginner'; // default
+        }
+
+        async function loadAllData() {
+            console.log('🔄 loadAllData called');
+            try {
+                const timestamp = new Date().getTime();
+                const response = await fetch(`${GUIDE_API_URL}?v=${timestamp}`);
+                const data = await response.json();
+                console.log('📦 Data received:', data);
+                
+                let guides = Array.isArray(data) ? data : (data.articles || []);
+
+                const currentMode = localStorage.getItem('tradeSiteMode') || 'gold';
+                const modePrefix = currentMode === 'silver' ? '#Silver' : '#Gold';
+
+                guides = guides.filter(article => {
+                    const link = article.Link || '';
+                    return link.toLowerCase().startsWith(modePrefix.toLowerCase());
+                });
+
+                console.log(`✅ Filtered guides (${currentMode}):`, guides.length);
+
+                if (guides.length > 0) {
+                    guides.sort((a, b) => new Date(b.Date || 0) - new Date(a.Date || 0));
+                    displayGuideCards(guides);
+                    displaySmallNewsCards(guides);
+                    console.log('✅ Cards displayed successfully');
+                } else {
+                    document.getElementById('guideGrid').innerHTML = `
+                        <div class="related-card">
+                            <div class="related-content" style="justify-content: center; min-height: 200px;">
+                                <p style="text-align: center; color: #666;">ยังไม่มีบทความสำหรับ ${currentMode === 'silver' ? 'เงิน' : 'ทองคำ'}</p>
+                            </div>
+                        </div>`;
+                    document.getElementById('smallNewsGrid').innerHTML = '';
+                    console.log('⚠️ No articles found');
+                }
+            } catch (error) {
+                console.error('❌ Error loading data:', error);
+                document.getElementById('guideGrid').innerHTML = `
+                    <div class="related-card">
+                        <div class="related-content" style="justify-content: center; min-height: 200px;">
+                            <p style="text-align: center; color: #e53e3e;">เกิดข้อผิดพลาดในการโหลดข้อมูล</p>
+                        </div>
+                    </div>`;
+            }
+        }
+
+        function displayGuideCards(guides) {
+            const guide = guides[0];
+            const title = guide.Title || guide.Question || 'ไม่มีหัวข้อ';
+            const image = guide.Image || '';
+            const excerpt = guide.Excerpt || guide.Answer || '';
+            const category = guide.Category || guide.หมวดหมู่ || 'ทั่วไป';
+            const date = guide.Date || '';
+            const articleId = guide.ID || guide.id || 1;
+            const tag = guide.Tag || ''; // ✅ ดึงข้อมูล Tag
+
+            let imageUrl = image;
+            if (image && image.includes('drive.google.com')) {
+                const match1 = image.match(/\/d\/(.*?)\//);
+                const match2 = image.match(/id=(.*?)(&|$)/);
+                const fileId = match1 ? match1[1] : (match2 ? match2[1] : '');
+                if (fileId) imageUrl = `https://lh3.googleusercontent.com/d/${fileId}`;
+            }
+
+            // ✅ สร้างแท็ก HTML สำหรับแสดงใน meta
+            const tagHTML = tag ? `<span class="meta-tag ${getTagClass(tag)}">${tag}</span>` : '';
+
+            document.getElementById('guideGrid').innerHTML = `
+                <a href="/trade-gold/detail?id=${articleId}" class="related-card" style="text-decoration: none; color: inherit;">
+                    <div class="related-content">
+                        <div class="related-image" style="background: linear-gradient(135deg, #EDBF43 0%, #B8860B 100%);">
+                            ${imageUrl ? `<img decoding="async" loading="lazy" src="${imageUrl}" alt="${title}" style="width:100%;height:100%;object-fit:cover;border-radius:10px;">` : ''}
+                            <span style="font-size: 6rem;" class="fallback-emoji">${imageUrl ? '' : '📖'}</span>
+                            <span class="related-category">${category}</span>
+                        </div>
+                        <div class="related-text">
+                            <h3 class="related-title">${title}</h3>
+                            <p class="related-description">${excerpt}</p>
+                            <div class="related-meta">
+                                <span>${date || ''}</span>
+                                ${tagHTML}
+                            </div>
+                        </div>
+                    </div>
+                </a>`;
+
+            // ✅ เพิ่ม error handler หลังจากสร้าง HTML เสร็จแล้ว
+            setTimeout(() => {
+                const img = document.querySelector('#guideGrid .related-image img');
+                if (img) {
+                    img.addEventListener('error', function() {
+                        this.style.display = 'none';
+                        const fallback = this.parentElement.querySelector('.fallback-emoji');
+                        if (fallback) {
+                            fallback.textContent = '📖';
+                            fallback.style.display = 'block';
+                        }
+                    });
+                }
+            }, 100);
+        }
+
+        function displaySmallNewsCards(guides) {
+            const items = guides.slice(1, 5);
+            const bgColors = [
+                'linear-gradient(135deg, #EDBF43 0%, #B8860B 100%)',
+                'linear-gradient(135deg, #3b82f6 0%, #1e40af 100%)',
+                'linear-gradient(135deg, #059669 0%, #047857 100%)',
+                'linear-gradient(135deg, #dc2626 0%, #991b1b 100%)'
+            ];
+            
+            let html = '';
+            items.forEach((item, index) => {
+                const category = item.Category || 'ทั่วไป';
+                const date = item.Date || '';
+                const excerpt = item.Excerpt || item.Answer || '';
+                const articleId = item.ID || item.id || (index + 2);
+                const bgColor = bgColors[index % bgColors.length];
+                const tag = item.Tag || ''; // ✅ ดึงข้อมูล Tag
+                
+                let imageUrl = item.Image || '';
+                if (imageUrl && imageUrl.includes('drive.google.com')) {
+                    const match1 = imageUrl.match(/\/d\/(.*?)\//);
+                    const match2 = imageUrl.match(/id=(.*?)(&|$)/);
+                    const fileId = match1 ? match1[1] : (match2 ? match2[1] : '');
+                    if (fileId) imageUrl = `https://lh3.googleusercontent.com/d/${fileId}`;
+                }
+
+                // ✅ สร้างแท็ก HTML สำหรับแสดงใน meta
+                const tagHTML = tag ? `<span class="meta-tag-small ${getTagClass(tag)}">${tag}</span>` : '';
+
+                html += `
+                <a href="/trade-gold/detail?id=${articleId}" class="small-news-card" style="text-decoration: none; color: inherit;">
+                    <div class="small-news-image" style="background: ${bgColor};">
+                        ${imageUrl ? `<img decoding="async" loading="lazy" src="${imageUrl}" onerror="this.style.display='none';" style="width:100%;height:100%;object-fit:cover;">` : '📰'}
+                        <span class="small-news-category">${category}</span>
+                    </div>
+                    <div class="small-news-content">
+                        <h4 class="small-news-title">${item.Title || item.Question}</h4>
+                        <p class="small-news-excerpt">${excerpt}</p>
+                        <div class="small-news-meta">
+                            <span>${date || ''}</span>
+                            ${tagHTML}
+                        </div>
+                    </div>
+                </a>`;
+            });
+            
+            document.getElementById('smallNewsGrid').innerHTML = html;
+        }
+
+        const countrySymbols = {
+            'USA': { gold: 'OANDA:XAUUSD', silver: 'OANDA:XAGUSD', currency: 'FX_IDC:USDTHB' },
+            'Thailand': { gold: 'SAXO:XAUTHB', silver: 'FX_IDC:XAGTHB', currency: 'FX_IDC:USDTHB' },
+            'UK': { gold: 'FOREXCOM:XAUGBP', silver: 'FX_IDC:XAGGBP', currency: 'FX_IDC:GBPTHB' },
+            'Europe': { gold: 'FOREXCOM:XAUEUR', silver: 'OANDA:XAGEUR', currency: 'FX_IDC:EURTHB' },
+            'Japan': { gold: 'FOREXCOM:XAUJPY', silver: 'FX_IDC:XAGJPY', currency: 'FX_IDC:JPYTHB' },
+            'Hong Kong': { gold: 'SAXO:XAUHKD', silver: 'OANDA:XAGHKD', currency: 'FX_IDC:HKDTHB' },
+            'Shanghai': { gold: 'SAXO:XAUCNH', silver: 'FX_IDC:XAGCNY', currency: 'FX_IDC:CNYTHB' },
+            'Singapore': { gold: 'FX_IDC:XAUSGD', silver: 'FX_IDC:XAGSGD', currency: 'FX_IDC:SGDTHB' }
+        };
+
+        function reloadWidget(containerId, symbol) {
+            const container = document.getElementById(containerId);
+            if (!container) return;
+            container.innerHTML = '<div class="tradingview-widget-container__widget"></div>';
+            const script = document.createElement('script');
+            script.src = 'https://s3.tradingview.com/external-embedding/embed-widget-single-quote.js';
+            script.async = true;
+            script.textContent = JSON.stringify({ symbol: symbol, colorTheme: "light", width: "100%", height: 100 });
+            container.appendChild(script);
+        }
+
+        function reloadMainChart(symbol) {
+            const container = document.getElementById('mainChartContainer');
+            if (!container) return;
+            container.innerHTML = '<div class="tradingview-widget-container" style="width:100%; height:100%;"><div class="tradingview-widget-container__widget"></div></div>';
+            const script = document.createElement('script');
+            script.src = 'https://s3.tradingview.com/external-embedding/embed-widget-symbol-overview.js';
+            script.async = true;
+            script.textContent = JSON.stringify({
+                symbols: [[symbol + "|ALL"]],
+                chartOnly: false,
+                width: "100%",
+                height: "100%",
+                locale: "en",
+                colorTheme: "light",
+                autosize: true
+            });
+            container.querySelector('.tradingview-widget-container').appendChild(script);
+        }
+
+        function syncWidgets(country) {
+            const symbols = countrySymbols[country];
+            const mode = localStorage.getItem('tradeSiteMode') || 'gold';
+            const metalSymbol = mode === 'silver' ? symbols.silver : symbols.gold;
+
+            reloadMainChart(metalSymbol);
+            reloadWidget('widget0', mode === 'silver' ? 'FX_IDC:XAGTHB' : 'PEPPERSTONE:XAUTHB');
+            reloadWidget('widget1', metalSymbol);
+            reloadWidget('widget3', symbols.currency);
+        }
+
+        function initCustomDropdown() {
+            const dropdown = document.getElementById('customDropdown');
+            const selected = document.getElementById('dropdownSelected');
+            const options = document.getElementById('dropdownOptions');
+            const hiddenSelect = document.getElementById('countryDropdown');
+
+            if (!dropdown || !selected || !options) return;
+
+            selected.addEventListener('click', (e) => {
+                e.stopPropagation();
+                dropdown.classList.toggle('active');
+            });
+
+            document.addEventListener('click', () => dropdown.classList.remove('active'));
+
+            const optionElements = options.querySelectorAll('.custom-option');
+            optionElements.forEach(option => {
+                option.addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    const value = option.dataset.value;
+                    const flag = option.dataset.flag;
+                    const text = option.querySelector('span').textContent;
+
+                    selected.querySelector('img').src = `https://hatscripts.github.io/circle-flags/flags/${flag}.svg`;
+                    selected.querySelector('span').textContent = text;
+                    hiddenSelect.value = value;
+
+                    optionElements.forEach(opt => opt.classList.remove('selected'));
+                    option.classList.add('selected');
+                    dropdown.classList.remove('active');
+
+                    syncWidgets(value);
+                });
+            });
+
+            optionElements[0].classList.add('selected');
+        }
+
+        window.addEventListener('DOMContentLoaded', () => {
+            loadAllData();
+            initCustomDropdown();
+            syncWidgets(document.getElementById('countryDropdown').value || 'USA');
+
+            window.addEventListener('storage', (e) => {
+                if (e.key === 'tradeSiteMode') {
+                    syncWidgets(document.getElementById('countryDropdown').value || 'USA');
+                }
+            });
+
+            window.addEventListener('modeChanged', () => {
+                syncWidgets(document.getElementById('countryDropdown').value || 'USA');
+            });
+        });
+    </script>
+
+    <script>
+        fetch('index.html')
+            .then(response => response.text())
+            .then(html => {
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(html, 'text/html');
+
+                const navbarTemplate = doc.getElementById('navbar-template');
+                if (navbarTemplate) {
+                    const navbarContent = navbarTemplate.content.cloneNode(true);
+                    document.getElementById('navbar-placeholder').appendChild(navbarContent);
+
+                    const currentPage = window.location.pathname.split('/').pop().replace('.html', '') || 'home';
+                    const navLinks = document.querySelectorAll('.nav-menu a');
+                    navLinks.forEach(link => {
+                        if (link.getAttribute('data-page') === currentPage) {
+                            link.classList.add('active');
+                        }
+                    });
+                }
+
+                const footerTemplate = doc.getElementById('footer-template');
+                if (footerTemplate) {
+                    const footerContent = footerTemplate.content.cloneNode(true);
+                    document.getElementById('footer-placeholder').appendChild(footerContent);
+                }
+
+                const switchButtonTemplate = doc.getElementById('switch-button-template');
+                if (switchButtonTemplate) {
+                    const switchButtonContent = switchButtonTemplate.content.cloneNode(true);
+                    document.getElementById('switch-button-placeholder').appendChild(switchButtonContent);
+                }
+                
+                const sharedStyles = doc.getElementById('shared-styles');
+                if (sharedStyles && !document.getElementById('shared-styles-injected')) {
+                    const styleElement = document.createElement('style');
+                    styleElement.id = 'shared-styles-injected';
+                    styleElement.textContent = sharedStyles.textContent;
+                    document.head.appendChild(styleElement);
+                }
+
+                const sharedScript = doc.getElementById('shared-components-script');
+                if (sharedScript && !window.sharedScriptLoaded) {
+                    const scriptElement = document.createElement('script');
+                    scriptElement.textContent = sharedScript.textContent;
+                    document.body.appendChild(scriptElement);
+                    window.sharedScriptLoaded = true;
+
+                    // ✅ Secondary text replacement (as backup)
+                    function updateTextByMode() {
+                        const isSilverMode = localStorage.getItem('tradeSiteMode') === 'silver';
+
+                        const heroBannerTitle = document.getElementById('heroBannerTitle');
+                        if (heroBannerTitle && heroBannerTitle.textContent !== (isSilverMode ? 'Trade Silver' : 'Trade Gold')) {
+                            heroBannerTitle.textContent = isSilverMode ? 'Trade Silver' : 'Trade Gold';
+                        }
+
+                        // ✅ Update hero background
+                        const heroSection = document.getElementById('heroSection');
+                        if (heroSection) {
+                            const bgImage = isSilverMode 
+                                ? '/trade-gold/wp-content/uploads/2026/01/silver_bars_1920x1080.png'
+                                : '/trade-gold/wp-content/uploads/2026/01/bg.png';
+                            
+                            heroSection.style.backgroundImage = `url('${bgImage}'), linear-gradient(135deg, var(--navy) 100%, var(--white) 15%)`;
+                        }
+
+                        const textReplacements = {
+                            'ทองคำ': isSilverMode ? 'เงิน' : 'ทองคำ',
+                            'ทอง': isSilverMode ? 'เงิน' : 'ทอง',
+                            'Gold': isSilverMode ? 'Silver' : 'Gold'
+                        };
+
+                        function replaceText(element) {
+                            if (element.nodeType === Node.TEXT_NODE) {
+                                let text = element.textContent;
+                                let modified = false;
+
+                                for (const [oldText, newText] of Object.entries(textReplacements)) {
+                                    if (text.includes(oldText)) {
+                                        text = text.replace(new RegExp(oldText, 'g'), newText);
+                                        modified = true;
+                                    }
+                                }
+
+                                if (modified) {
+                                    element.textContent = text;
+                                }
+                            } else if (element.nodeType === Node.ELEMENT_NODE &&
+                                       element.tagName !== 'SCRIPT' &&
+                                       element.tagName !== 'STYLE') {
+                                for (const child of element.childNodes) {
+                                    replaceText(child);
+                                }
+                            }
+                        }
+
+                        replaceText(document.body);
+                        console.log(`✅ Secondary text update: ${isSilverMode ? 'Silver' : 'Gold'} mode`);
+                    }
+
+                    setTimeout(updateTextByMode, 100);
+
+                    window.addEventListener('modeChanged', () => {
+                        updateTextByMode();
+                        loadAllData();
+                    });
+                }
+            })
+            .catch(error => console.error('Error loading components:', error));
+    </script>
+
+
+
+
+    </main><!-- #content -->
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-title">Contact</div>
+            <div class="footer-grid">
+                <!-- Line Contact -->
+                <div class="footer-item">
+                    <div class="footer-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewbox="0 0 24 24" fill="white">
+                            <path d="M12 2C6.48 2 2 6.48 2 12c0 5.52 4.48 10 10 10s10-4.48 10-10c0-5.52-4.48-10-10-10zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z"></path>
+                        </svg>
+                    </div>
+                    <div class="footer-text">
+                        <div>@555qutex</div>
+                    </div>
+                </div>
+                
+                <!-- Phone -->
+                <div class="footer-item">
+                    <div class="footer-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewbox="0 0 24 24" fill="white">
+                            <path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56-.35-.12-.74-.03-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z"></path>
+                        </svg>
+                    </div>
+                    <div class="footer-text">
+                        <div>02-xxx-xxxx, 02-xxx-xxxx</div>
+                    </div>
+                </div>
+                
+                <!-- Address -->
+                <div class="footer-item">
+                    <div class="footer-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewbox="0 0 24 24" fill="white">
+                            <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"></path>
+                        </svg>
+                    </div>
+                    <div class="footer-text">
+                        <div>1 ถนนราชดำริ ลุมพินี ปทุมวัน กรุงเทพมหานคร สีลม ซอย 22 ห้อง 2301 ชั้น 23 ถนนแวนเดอร์ แขวง</div>
+                        <div>สีลม เขตบางรัก กรุงเทพมหานคร 10500</div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div>copy right © 2026</div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Switch Website Button -->
+    <div class="switch-web-button" id="switchWebButton">
+        <div class="switch-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="17 1 21 5 17 9"></polyline>
+                <path d="M3 11V9a4 4 0 0 1 4-4h14"></path>
+                <polyline points="7 23 3 19 7 15"></polyline>
+                <path d="M21 13v2a4 4 0 0 1-4 4H3"></path>
+            </svg>
+        </div>
+        <span class="switch-text"><strong id="switchTargetText">Silver</strong></span>
+    </div>
+    
+</div><!-- #page -->
+
+<script type="speculationrules">
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"/trade-gold/*"},{"not":{"href_matches":["/trade-gold/wp-*.php","/trade-gold/wp-admin/*","/trade-gold/wp-content/uploads/*","/trade-gold/wp-content/*","/trade-gold/wp-content/plugins/*","/trade-gold/wp-content/themes/tradegold-theme/*","/trade-gold/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
+<script type="text/javascript" id="tradegold-script-js-extra">
+/* <![CDATA[ */
+var tradegoldAjax = {"ajaxurl":"/wp-admin/admin-ajax.php","nonce":"d7a85a183f"};
+//# sourceURL=tradegold-script-js-extra
+/* ]]> */
+</script>
+<script type="text/javascript" src="/wp-content/themes/tradegold-theme/js/theme.js?ver=3.0" id="tradegold-script-js"></script>
+<script id="wp-emoji-settings" type="application/json">
+{"baseUrl":"https://s.w.org/images/core/emoji/17.0.2/72x72/","ext":".png","svgUrl":"https://s.w.org/images/core/emoji/17.0.2/svg/","svgExt":".svg","source":{"concatemoji":"/wp-includes/js/wp-emoji-release.min.js?ver=6.9"}}
+</script>
+<script type="module">
+/* <![CDATA[ */
+/*! This file is auto-generated */
+const a=JSON.parse(document.getElementById("wp-emoji-settings").textContent),o=(window._wpemojiSettings=a,"wpEmojiSettingsSupports"),s=["flag","emoji"];function i(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(o,JSON.stringify(t))}catch(e){}}function c(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data);e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0);const a=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data);return t.every((e,t)=>e===a[t])}function p(e,t){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var n=e.getImageData(16,16,1,1);for(let e=0;e<n.data.length;e++)if(0!==n.data[e])return!1;return!0}function u(e,t,n,a){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\udde8\ud83c\uddf6","\ud83c\udde8\u200b\ud83c\uddf6")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!a(e,"\ud83e\u1fac8")}return!1}function f(e,t,n,a){let r;const o=(r="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):document.createElement("canvas")).getContext("2d",{willReadFrequently:!0}),s=(o.textBaseline="top",o.font="600 32px Arial",{});return e.forEach(e=>{s[e]=t(o,e,n,a)}),s}function r(e){var t=document.createElement("script");t.src=e,t.defer=!0,document.head.appendChild(t)}a.supports={everything:!0,everythingExceptFlag:!0},new Promise(t=>{let n=function(){try{var e=JSON.parse(sessionStorage.getItem(o));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+f.toString()+"("+[JSON.stringify(s),u.toString(),c.toString(),p.toString()].join(",")+"));",a=new Blob([e],{type:"text/javascript"});const r=new Worker(URL.createObjectURL(a),{name:"wpTestEmojiSupports"});return void(r.onmessage=e=>{i(n=e.data),r.terminate(),t(n)})}catch(e){}i(n=f(s,u,c,p))}t(n)}).then(e=>{for(const n in e)a.supports[n]=e[n],a.supports.everything=a.supports.everything&&a.supports[n],"flag"!==n&&(a.supports.everythingExceptFlag=a.supports.everythingExceptFlag&&a.supports[n]);var t;a.supports.everythingExceptFlag=a.supports.everythingExceptFlag&&!a.supports.flag,a.supports.everything||((t=a.source||{}).concatemoji?r(t.concatemoji):t.wpemoji&&t.twemoji&&(r(t.twemoji),r(t.wpemoji)))});
+//# sourceURL=/wp-includes/js/wp-emoji-loader.min.js
+/* ]]> */
+</script>
+
+</body>
+</html>

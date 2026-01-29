@@ -1,0 +1,1215 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head><meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Inline Script: Load Theme Mode Early -->
+    <script>
+        // โหลด theme mode ทันทีเพื่อป้องกันการกระพริบ
+        (function() {
+            const currentMode = localStorage.getItem('tradeSiteMode');
+            
+            // เช็คว่ามีค่าและเป็น silver จริงๆ ถึงจะเปลี่ยนสี
+            if (currentMode === 'silver') {
+                document.documentElement.classList.add('silver-mode');
+                document.documentElement.classList.remove('gold-mode');
+            } else {
+                // ถ้าไม่มีหรือเป็น gold ให้ใช้ gold mode (ค่าเริ่มต้น)
+                document.documentElement.classList.add('gold-mode');
+                document.documentElement.classList.remove('silver-mode');
+                
+                // ตั้งค่าเป็น gold ถ้ายังไม่มีค่า
+                if (!currentMode) {
+                    localStorage.setItem('tradeSiteMode', 'gold');
+                }
+            }
+        })();
+    </script>
+    
+    <title>Guide – เทรดทอง</title>
+<meta name="robots" content="max-image-preview:large">
+<link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="/wp-json/oembed/1.0/embed?url=%2Fguide%2F">
+<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="/wp-json/oembed/1.0/embed?url=%2Fguide%2F&amp;format=xml">
+<style id="wp-img-auto-sizes-contain-inline-css" type="text/css">
+img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
+/*# sourceURL=wp-img-auto-sizes-contain-inline-css */
+</style>
+<style id="wp-emoji-styles-inline-css" type="text/css">
+
+	img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+/*# sourceURL=wp-emoji-styles-inline-css */
+</style>
+<style id="wp-block-library-inline-css" type="text/css">
+:root{--wp-block-synced-color:#7a00df;--wp-block-synced-color--rgb:122,0,223;--wp-bound-block-color:var(--wp-block-synced-color);--wp-editor-canvas-background:#ddd;--wp-admin-theme-color:#007cba;--wp-admin-theme-color--rgb:0,124,186;--wp-admin-theme-color-darker-10:#006ba1;--wp-admin-theme-color-darker-10--rgb:0,107,160.5;--wp-admin-theme-color-darker-20:#005a87;--wp-admin-theme-color-darker-20--rgb:0,90,135;--wp-admin-border-width-focus:2px}@media (min-resolution:192dpi){:root{--wp-admin-border-width-focus:1.5px}}.wp-element-button{cursor:pointer}:root .has-very-light-gray-background-color{background-color:#eee}:root .has-very-dark-gray-background-color{background-color:#313131}:root .has-very-light-gray-color{color:#eee}:root .has-very-dark-gray-color{color:#313131}:root .has-vivid-green-cyan-to-vivid-cyan-blue-gradient-background{background:linear-gradient(135deg,#00d084,#0693e3)}:root .has-purple-crush-gradient-background{background:linear-gradient(135deg,#34e2e4,#4721fb 50%,#ab1dfe)}:root .has-hazy-dawn-gradient-background{background:linear-gradient(135deg,#faaca8,#dad0ec)}:root .has-subdued-olive-gradient-background{background:linear-gradient(135deg,#fafae1,#67a671)}:root .has-atomic-cream-gradient-background{background:linear-gradient(135deg,#fdd79a,#004a59)}:root .has-nightshade-gradient-background{background:linear-gradient(135deg,#330968,#31cdcf)}:root .has-midnight-gradient-background{background:linear-gradient(135deg,#020381,#2874fc)}:root{--wp--preset--font-size--normal:16px;--wp--preset--font-size--huge:42px}.has-regular-font-size{font-size:1em}.has-larger-font-size{font-size:2.625em}.has-normal-font-size{font-size:var(--wp--preset--font-size--normal)}.has-huge-font-size{font-size:var(--wp--preset--font-size--huge)}.has-text-align-center{text-align:center}.has-text-align-left{text-align:left}.has-text-align-right{text-align:right}.has-fit-text{white-space:nowrap!important}#end-resizable-editor-section{display:none}.aligncenter{clear:both}.items-justified-left{justify-content:flex-start}.items-justified-center{justify-content:center}.items-justified-right{justify-content:flex-end}.items-justified-space-between{justify-content:space-between}.screen-reader-text{border:0;clip-path:inset(50%);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px;word-wrap:normal!important}.screen-reader-text:focus{background-color:#ddd;clip-path:none;color:#444;display:block;font-size:1em;height:auto;left:5px;line-height:normal;padding:15px 23px 14px;text-decoration:none;top:5px;width:auto;z-index:100000}html :where(.has-border-color){border-style:solid}html :where([style*=border-top-color]){border-top-style:solid}html :where([style*=border-right-color]){border-right-style:solid}html :where([style*=border-bottom-color]){border-bottom-style:solid}html :where([style*=border-left-color]){border-left-style:solid}html :where([style*=border-width]){border-style:solid}html :where([style*=border-top-width]){border-top-style:solid}html :where([style*=border-right-width]){border-right-style:solid}html :where([style*=border-bottom-width]){border-bottom-style:solid}html :where([style*=border-left-width]){border-left-style:solid}html :where(img[class*=wp-image-]){height:auto;max-width:100%}:where(figure){margin:0 0 1em}html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:var(--wp-admin--admin-bar--height,0px)}@media screen and (max-width:600px){html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:0px}}
+
+/*# sourceURL=wp-block-library-inline-css */
+</style><style id="global-styles-inline-css" type="text/css">
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgb(6,147,227) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgb(252,185,0) 0%,rgb(255,105,0) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgb(255,105,0) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgb(255, 255, 255), 6px 6px rgb(0, 0, 0);--wp--preset--shadow--crisp: 6px 6px 0px rgb(0, 0, 0);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+/*# sourceURL=global-styles-inline-css */
+</style>
+
+<style id="classic-theme-styles-inline-css" type="text/css">
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+/*# sourceURL=/wp-includes/css/classic-themes.min.css */
+</style>
+<link rel="stylesheet" id="tradegold-style-css" href="/wp-content/themes/tradegold-theme/style.css?ver=3.0" type="text/css" media="all">
+<link rel="stylesheet" id="fullwidth-template-no-sidebar-css" href="/wp-content/plugins/fullwidth-templates/assets/css/fullwidth-template-no-sidebar.css?ver=6.9" type="text/css" media="all">
+<script type="text/javascript" src="/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
+<script type="text/javascript" src="/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js"></script>
+<link rel="https://api.w.org/" href="/wp-json/"><link rel="alternate" title="JSON" type="application/json" href="/wp-json/wp/v2/pages/106"><link rel="EditURI" type="application/rsd+xml" title="RSD" href="/xmlrpc.php?rsd">
+<meta name="generator" content="WordPress 6.9">
+<link rel="canonical" href="/guide/">
+<link rel="shortlink" href="/?p=106">
+<link rel="icon" href="/wp-content/uploads/2026/01/logo.jpg" sizes="32x32">
+<link rel="icon" href="/wp-content/uploads/2026/01/logo.jpg" sizes="192x192">
+<link rel="apple-touch-icon" href="/wp-content/uploads/2026/01/logo.jpg">
+<meta name="msapplication-TileImage" content="/wp-content/uploads/2026/01/logo.jpg">
+		<style type="text/css" id="wp-custom-css">
+			.logo-image {
+    display: none !important;
+}		</style>
+		</head>
+
+<body class="wp-singular page-template page-template-template-page-builder-no-sidebar page-template-template-page-builder-no-sidebar-php page page-id-106 wp-theme-tradegold-theme fpt-template fpt-template-tradegold-theme">
+
+<div id="page" class="site">
+    
+    <!-- Header Navigation -->
+    <header class="header">
+        <div class="nav-container">
+            <!-- Logo -->
+            <a href="/" class="logo-link">
+                <div class="logo">
+                    <img src="/wp-content/themes/tradegold-theme/images/TG-logo.png" alt="Trade Gold Logo" class="logo-image">
+                    <div class="logo-text">
+                        <span class="logo-trade">Trade</span>
+                        <span class="logo-gold">Gold</span>
+                    </div>
+                </div>
+            </a>
+            
+            <!-- Right Section: Search Bar + Hamburger -->
+            <div class="nav-right-section">
+                <!-- Search Bar (Desktop) -->
+                <div class="search-bar-container desktop-search">
+                    <div class="search-bar">
+                        <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <path d="m21 21-4.35-4.35"></path>
+                        </svg>
+                        <input type="search" id="searchInput" placeholder="ค้นหาบทความ..." autocomplete="off">
+                        <button class="clear-search" id="clearSearch" style="display: none;">✕</button>
+                    </div>
+                    <div class="search-dropdown" id="searchDropdown"></div>
+                </div>
+                
+                <!-- Hamburger Menu Button (Mobile/Tablet) -->
+                <button class="hamburger-menu" id="hamburgerMenu" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+            
+            <!-- Navigation Menu (Desktop) -->
+            <nav class="main-navigation"><ul id="menu-menu-1" class="nav-menu desktop-menu"><li id="menu-item-148" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-148"><a href="/">Home</a></li>
+<li id="menu-item-155" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-155"><a href="/market-trade-gold/">Market</a></li>
+<li id="menu-item-150" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-150"><a href="/blog/">Blog</a></li>
+<li id="menu-item-153" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-153"><a href="/faq/">FAQ</a></li>
+<li id="menu-item-149" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-149"><a href="/about-us/">About Us</a></li>
+<li id="menu-item-151" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-151"><a href="/contact/">Contact</a></li>
+</ul></nav>            
+            <!-- Sign Up Button (Desktop) -->
+            <a href="https://forms.gle/39UFCgrYbdfTVmhZ9" target="_blank" rel="noopener" class="signup-btn desktop-signup">
+                เปิดบัญชี            </a>
+        </div>
+        
+        <!-- Mobile Menu Dropdown -->
+        <div class="mobile-menu-dropdown" id="mobileMenuDropdown">
+            <!-- Close Button -->
+            <button class="mobile-menu-close" id="mobileMenuClose" aria-label="Close Menu">✕</button>
+            
+            <!-- Search Bar (Mobile) -->
+            <div class="search-bar-container mobile-search">
+                <div class="search-bar">
+                    <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <path d="m21 21-4.35-4.35"></path>
+                    </svg>
+                    <input type="search" id="searchInputMobile" placeholder="ค้นหาบทความ..." autocomplete="off">
+                    <button class="clear-search" id="clearSearchMobile" style="display: none;">✕</button>
+                </div>
+                <div class="search-dropdown" id="searchDropdownMobile"></div>
+            </div>
+            
+            <!-- Navigation Menu (Mobile) -->
+            <nav class="mobile-navigation"><ul id="menu-menu-2" class="nav-menu mobile-menu"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-148"><a href="/">Home</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-155"><a href="/market-trade-gold/">Market</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-150"><a href="/blog/">Blog</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-153"><a href="/faq/">FAQ</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-149"><a href="/about-us/">About Us</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-151"><a href="/contact/">Contact</a></li>
+</ul></nav>            
+            <!-- Sign Up Button (Mobile) -->
+            <a href="https://forms.gle/39UFCgrYbdfTVmhZ9" target="_blank" rel="noopener" class="signup-btn mobile-signup">
+                เปิดบัญชี            </a>
+        </div>
+    </header>
+    
+    <!-- Main Content -->
+    <main id="content" class="site-main">
+
+
+
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>บทความ – Trade Gold</title>
+    <link rel="icon" type="image/png" href="/guide/image/logo.png">
+    <!-- Preconnect for faster font loading -->
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700;900&amp;display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --gold-primary: #EDBF43;
+            --gold-light: #FFD700;
+            --gold-dark: #B8860B;
+            --navy: #1E3A8A;
+            --navy-medium: #1E40AF;
+            --white: #ffffff;
+            --gray-light: #f8f9fa;
+            --gray-medium: #e9ecef;
+            --text-dark: #2c3e50;
+            --sky-blue: #87CEEB;
+            --sky-light: #A3DFF8;
+            --shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            --green: #059669;
+            --red: #dc2626
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box
+        }
+
+        body {
+            font-family: 'Kanit', sans-serif;
+            background: linear-gradient(180deg, var(--sky-light) 0%, var(--white) 100%);
+            color: var(--text-dark);
+            line-height: 1.8
+        }
+
+        .breadcrumb {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 2rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 0.9rem;
+            color: #6b7280
+        }
+
+        .breadcrumb a {
+            color: var(--navy);
+            text-decoration: none;
+            transition: color 0.3s
+        }
+
+        .breadcrumb a:hover {
+            color: var(--gold-primary)
+        }
+
+        .breadcrumb span {
+            color: #9ca3af
+        }
+
+        .nav-wrapper {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            gap: 2rem;
+            position: relative;
+            padding-top: 2rem
+        }
+
+        .table-of-contents {
+            width: 280px;
+            flex-shrink: 0;
+            position: sticky;
+            top: 100px;
+            align-self: flex-start;
+            background: var(--white);
+            border-radius: 15px;
+            padding: 1.5rem;
+            box-shadow: var(--shadow);
+            max-height: calc(100vh - 120px);
+            overflow-y: auto
+        }
+
+        .toc-title {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: var(--navy);
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--gold-primary)
+        }
+
+        .toc-list {
+            list-style: none;
+            padding: 0
+        }
+
+        .toc-list li {
+            margin-bottom: 0.5rem
+        }
+
+        .toc-list a {
+            display: block;
+            color: var(--text-dark);
+            text-decoration: none;
+            padding: 0.5rem 0.75rem;
+            border-radius: 8px;
+            transition: all 0.3s;
+            font-size: 0.95rem;
+            border: 2px solid transparent
+        }
+
+        .toc-list a:hover {
+            background: var(--gray-light);
+            color: var(--navy);
+            padding-left: 1rem;
+            border-color: var(--gray-medium)
+        }
+
+        .toc-list a.active {
+            background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+            color: var(--navy);
+            font-weight: 600;
+            border: 2px solid var(--gold-primary);
+            box-shadow: 0 2px 8px rgba(237, 191, 67, 0.3)
+        }
+
+        .toc-list a.active:hover {
+            padding-left: 0.75rem;
+            border-color: var(--gold-dark)
+        }
+
+        .toc-item-parent {
+            position: relative
+        }
+
+        .toc-item-parent>.toc-parent-wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 0.5rem;
+            border-radius: 8px;
+            transition: all 0.3s;
+            border: 2px solid transparent
+        }
+
+        .toc-item-parent>.toc-parent-wrapper:hover {
+            background: var(--gray-light);
+            border-color: var(--gray-medium)
+        }
+
+        .toc-item-parent>.toc-parent-wrapper.active {
+            background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+            border: 2px solid var(--gold-primary);
+            box-shadow: 0 2px 8px rgba(237, 191, 67, 0.3)
+        }
+
+        .toc-item-parent>.toc-parent-wrapper.active:hover {
+            border-color: var(--gold-dark)
+        }
+
+        .toc-item-parent>.toc-parent-wrapper>a {
+            flex: 1;
+            border: none !important;
+            background: none !important;
+            box-shadow: none !important;
+            padding: 0.5rem 0.75rem
+        }
+
+        .toc-item-parent>.toc-parent-wrapper>a:hover {
+            background: none !important;
+            padding-left: 0.75rem !important
+        }
+
+        .toc-item-parent>.toc-parent-wrapper.active>a {
+            color: var(--navy);
+            font-weight: 600
+        }
+
+        .toc-toggle-btn {
+            background: none;
+            border: none;
+            color: var(--navy);
+            font-size: 0.9rem;
+            cursor: pointer;
+            padding: 0.5rem 0.75rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 8px;
+            transition: all 0.3s;
+            flex-shrink: 0
+        }
+
+        .toc-toggle-btn:hover {
+            background: var(--gray-light)
+        }
+
+        .toc-toggle-btn.collapsed {
+            transform: rotate(-90deg)
+        }
+
+        .toc-submenu {
+            list-style: none;
+            padding: 0.75rem;
+            padding-left: 1.5rem;
+            margin-top: 0.5rem;
+            margin-bottom: 0.5rem;
+            overflow: hidden;
+            max-height: 500px;
+            transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out;
+            opacity: 1;
+            background: var(--gray-light);
+            border: 2px solid var(--gray-medium);
+            border-radius: 8px
+        }
+
+        .toc-submenu.collapsed {
+            max-height: 0;
+            opacity: 0;
+            margin-top: 0;
+            margin-bottom: 0;
+            padding-top: 0;
+            padding-bottom: 0;
+            border-color: transparent
+        }
+
+        .toc-submenu li {
+            margin-bottom: 0.25rem
+        }
+
+        .toc-submenu li:last-child {
+            margin-bottom: 0
+        }
+
+        .toc-submenu a {
+            padding: 0.4rem 0.5rem;
+            font-size: 0.9rem
+        }
+
+        .toc-toggle {
+            display: none;
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            background: var(--gold-primary);
+            color: var(--navy);
+            border: none;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            font-size: 1.5rem;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            cursor: pointer;
+            z-index: 1000;
+            transition: all 0.3s
+        }
+
+        .toc-toggle:hover {
+            transform: scale(1.1)
+        }
+
+        .article-container {
+            flex: 1;
+            margin-bottom: 4rem
+        }
+
+        .article-category {
+            position: absolute;
+            top: 12px;
+            right: 12px;
+            display: inline-block;
+            background: var(--navy);
+            color: var(--white);
+            padding: 0.5rem 1.5rem;
+            border-radius: 25px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+            z-index: 10
+        }
+
+        .article-meta {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            color: var(--white);
+            font-size: 0.95rem
+        }
+
+        .meta-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem
+        }
+
+        .article-featured-image {
+            width: 100%;
+            height: 500px;
+            background: url('/wp-content/uploads/2026/01/Book.webp') center center/cover no-repeat, linear-gradient(135deg, var(--navy) 0%, var(--navy-medium) 100%);
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            padding: 3rem;
+            margin-bottom: 0;
+            overflow: hidden;
+            position: relative
+        }
+
+        .article-featured-image::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: var(--navy);
+            opacity: 0.5;
+            z-index: 0
+        }
+
+        .article-featured-image::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 200px;
+            background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+            z-index: 1
+        }
+
+        .article-header-content {
+            position: relative;
+            z-index: 2
+        }
+
+        .article-content {
+            background: var(--white);
+            border-radius: 20px;
+            padding: 3rem;
+            box-shadow: var(--shadow);
+            margin-bottom: 0
+        }
+
+        .article-content h2 {
+            font-size: 2rem;
+            color: var(--navy);
+            margin: 2rem 0 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 3px solid var(--gold-primary);
+            scroll-margin-top: 120px
+        }
+
+        .article-content h3 {
+            font-size: 1.5rem;
+            color: var(--navy);
+            margin: 1.5rem 0 1rem;
+            scroll-margin-top: 120px
+        }
+
+        .article-content p {
+            margin-bottom: 1.5rem;
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: var(--text-dark)
+        }
+
+        .article-content ul,
+        .article-content ol {
+            margin: 1.5rem 0;
+            padding-left: 2rem
+        }
+
+        .article-content li {
+            margin-bottom: 0.75rem;
+            font-size: 1.05rem;
+            line-height: 1.8
+        }
+
+        .article-content blockquote {
+            background: var(--gray-light);
+            border-left: 5px solid var(--gold-primary);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 10px;
+            font-style: italic;
+            color: #555
+        }
+
+        .highlight-box {
+            background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+            border: 2px solid var(--gold-primary);
+            border-radius: 15px;
+            padding: 2rem;
+            margin: 2rem 0;
+            box-shadow: 0 4px 15px rgba(237, 191, 67, 0.2)
+        }
+
+        .highlight-box h4 {
+            color: var(--navy);
+            margin-bottom: 1rem;
+            font-size: 1.3rem
+        }
+
+        .highlight-box p,
+        .highlight-box li {
+            color: var(--text-dark)
+        }
+
+        @media (max-width:1024px) {
+            .nav-wrapper {
+                flex-direction: column
+            }
+
+            .table-of-contents {
+                position: fixed;
+                top: 0;
+                left: -100%;
+                width: 300px;
+                height: 100vh;
+                max-height: 100vh;
+                z-index: 999;
+                transition: left 0.3s;
+                border-radius: 0
+            }
+
+            .table-of-contents.active {
+                left: 0
+            }
+
+            .toc-toggle {
+                display: block
+            }
+
+            .toc-overlay {
+                display: none;
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: rgba(0, 0, 0, 0.5);
+                z-index: 998
+            }
+
+            .toc-overlay.active {
+                display: block
+            }
+        }
+
+        @media (max-width:768px) {
+            .article-content {
+                padding: 2rem 1.5rem
+            }
+
+            .article-content h2 {
+                font-size: 1.5rem
+            }
+
+            .article-featured-image {
+                height: 400px
+            }
+        }
+    </style>
+
+
+
+    <div id="navbar-placeholder"></div>
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb">
+        <a href="/guide/home.html">หน้าแรก</a>
+        <span>›</span>
+        <a href="/guide/blog.html">บทความ</a>
+        <span>›</span>
+        <span>คู่มือเริ่มต้นลงทุนทองคำสำหรับมือใหม่</span>
+    </div>
+
+    <!-- Main Content with Navigation -->
+    <div class="nav-wrapper">
+        <!-- Table of Contents -->
+        <aside class="table-of-contents" id="tocSidebar">
+            <h3 class="toc-title">📋 สารบัญ</h3>
+            <ul class="toc-list">
+                <li><a href="#what-is-gold-trading">💰 ทองคำคืออะไร?</a></li>
+                <li><a href="#why-trade-gold">🌟 ทำไมต้องเทรดทองคำ?</a></li>
+                <li><a href="#trading-methods">📊 วิธีการเทรดทองคำ</a></li>
+                <li class="toc-item-parent">
+                    <div class="toc-parent-wrapper">
+                        <a href="#trading-strategies">🎯 กลยุทธ์การเทรดทองคำ</a>
+                        <button class="toc-toggle-btn" aria-label="Toggle submenu">▼</button>
+                    </div>
+                    <ul class="toc-submenu">
+                        <li><a href="#day-trading">1. Day Trading</a></li>
+                        <li><a href="#swing-trading">2. Swing Trading</a></li>
+                        <li><a href="#position-trading">3. Position Trading</a></li>
+                    </ul>
+                </li>
+                <li class="toc-item-parent">
+                    <div class="toc-parent-wrapper">
+                        <a href="#analysis-tools">📈 เครื่องมือวิเคราะห์</a>
+                        <button class="toc-toggle-btn" aria-label="Toggle submenu">▼</button>
+                    </div>
+                    <ul class="toc-submenu">
+                        <li><a href="#technical-analysis">Technical Analysis</a></li>
+                        <li><a href="#fundamental-analysis">Fundamental Analysis</a></li>
+                    </ul>
+                </li>
+                <li><a href="#risk-management">⚠️ การบริหารความเสี่ยง</a></li>
+                <li><a href="#getting-started">🚀 เริ่มต้นเทรดทองคำ</a></li>
+                <li><a href="#tools-platforms">📱 เครื่องมือและแพลตฟอร์ม</a></li>
+                <li><a href="#conclusion">✅ สรุป</a></li>
+            </ul>
+        </aside>
+
+        <!-- Article Content -->
+        <div class="article-container">
+            <div class="article-featured-image" id="articleImage">
+                <span class="article-category">📘 Guide Book</span>
+                <div class="article-header-content">
+                    <div class="article-meta">
+                        <div class="meta-item">
+                            <span id="articleDate">22 ธันวาคม 2025</span>
+                        </div>
+                        <div class="meta-item">
+                            <span>โดย Trade Gold Team</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="article-content">
+                <h2 id="what-is-gold-trading">💰 ทองคำคืออะไร และทำไมถึงเป็นที่นิยมในวงการเทรด?</h2>
+
+                <p>ทองคำเป็นโลหะมีค่าที่ได้รับการยอมรับว่าเป็น <strong>“ทรัพย์สินปลอดภัย” (Safe Haven Asset)</strong>
+                    มาตั้งแต่สมัยโบราณ ในโลกของการเทรด ทองคำมีบทบาทสำคัญเป็นเครื่องมือในการป้องกันความเสี่ยงจากทองคำเฟ้อ
+                    (Inflation Hedge) และความผันผวนของตลาดการทองคำ</p>
+
+                <p>การเทรดทองคำในปัจจุบันไม่ได้หมายถึงการซื้อขายทองคำแท่งหรือทองรูปพรรณเท่านั้น
+                    แต่รวมถึงการเทรดผ่านตราสารอนุพันธ์ต่างๆ เช่น <strong>Gold Futures, Gold CFDs, Gold ETFs</strong> และ
+                    <strong>Gold Spot</strong>
+                    ซึ่งทำให้นักเทรดสามารถเข้าถึงตลาดทองคำได้ง่ายขึ้นและมีความยืดหยุ่นมากกว่าเดิม</p>
+
+                <h2 id="why-trade-gold">🌟 ทำไมต้องเทรดทองคำ?</h2>
+
+                <ul>
+                    <li><strong>สภาพคล่องสูง:</strong> ตลาดทองคำมีสภาพคล่องสูง ซื้อขายได้ตลอด 24 ชั่วโมง</li>
+                    <li><strong>ป้องกันความเสี่ยง:</strong> ราคาทองมักเคลื่อนไหวสวนทางกับตลาดหุ้นและดอลลาร์</li>
+                    <li><strong>โอกาสในการทำกำไร:</strong> มีความผันผวนที่เหมาะสมทั้งในระยะสั้นและระยะยาว</li>
+                    <li><strong>เข้าถึงง่าย:</strong> สามารถเริ่มต้นด้วยทองคำทุนไม่มาก และมีแพลตฟอร์มเทรดที่หลากหลาย
+                    </li>
+                </ul>
+
+                <h2 id="trading-methods">📊 วิธีการเทรดทองคำ</h2>
+
+                <p>มีหลายวิธีในการเทรดทองคำ แต่ละวิธีมีข้อดีและข้อจำกัดที่แตกต่างกัน:</p>
+
+                <ol>
+                    <li><strong>Gold Spot (XAU/USD):</strong> เทรดราคาทองคำปัจจุบันโดยตรง</li>
+                    <li><strong>Gold Futures:</strong> สัญญาซื้อขายทองคำในอนาคต</li>
+                    <li><strong>Gold CFD:</strong> สัญญาส่วนต่างราคาทองคำ เหมาะสำหรับเทรดระยะสั้น</li>
+                    <li><strong>Gold ETF:</strong> กองทุนที่ลงทุนในทองคำ</li>
+                </ol>
+
+                <h2 id="trading-strategies">🎯 กลยุทธ์การเทรดทองคำที่ควรรู้</h2>
+
+                <h3 id="day-trading">1. Day Trading (เทรดภายในวัน)</h3>
+                <p>เหมาะสำหรับคนที่ชอบเทรดระยะสั้นมาก โดยเปิดและปิดออเดอร์ภายในวันเดียว เพื่อหลีกเลี่ยง Overnight Risk
+                </p>
+
+                <div class="highlight-box">
+                    <h4>💡 เคล็ดลับสำหรับ Day Trading ทองคำ</h4>
+                    <ul>
+                        <li>เทรดในช่วงเวลาที่มีความผันผวนสูง (เช่น 20:00-24:00 เวลาไทย)</li>
+                        <li>ใช้ Stop Loss ทุกครั้ง</li>
+                        <li>จำกัดความเสี่ยงไม่เกิน 2% ของทองคำทุนต่อออเดอร์</li>
+                        <li>ติดตามข่าวเศรษฐกิจสำคัญ เช่น CPI, Non-farm Payrolls</li>
+                    </ul>
+                </div>
+
+                <h3 id="swing-trading">2. Swing Trading (เทรดระยะสั้น)</h3>
+                <p>เหมาะสำหรับคนที่ไม่สามารถติดตามตลาดตลอดเวลา โดยถือสถานะ 2-5 วัน เพื่อจับกำไรจากแนวโน้มราคาระยะสั้น
+                </p>
+
+                <h3 id="position-trading">3. Position Trading (เทรดระยะยาว)</h3>
+                <p>เหมาะสำหรับนักลงทุนที่มองระยะยาว ถือสถานะหลายสัปดาห์ถึงหลายเดือน
+                    โดยวิเคราะห์จากปัจจัยพื้นฐานและเทรนด์ใหญ่</p>
+
+                <h2 id="analysis-tools">📈 เครื่องมือวิเคราะห์ที่ควรรู้จัก</h2>
+
+                <blockquote>
+                    “การวิเคราะห์ทั้ง Technical และ Fundamental เป็นกุญแจสำคัญในการเทรดทองคำให้ประสบความสำเร็จ”
+                </blockquote>
+
+                <h3 id="technical-analysis">Technical Analysis (การวิเคราะห์ทางเทคนิค)</h3>
+                <ul>
+                    <li><strong>Moving Averages (MA):</strong> ใช้ดูแนวโน้มราคา</li>
+                    <li><strong>RSI (Relative Strength Index):</strong> บอกสภาวะ Overbought/Oversold</li>
+                    <li><strong>Support &amp; Resistance:</strong> ระดับราคาสำคัญที่ควรจับตา</li>
+                    <li><strong>Fibonacci Retracement:</strong> หาจุด Entry/Exit ที่เหมาะสม</li>
+                </ul>
+
+                <h3 id="fundamental-analysis">Fundamental Analysis (การวิเคราะห์ปัจจัยพื้นฐาน)</h3>
+                <ul>
+                    <li><strong>ดัชนีดอลลาร์ (DXY):</strong> ราคาทองมักเคลื่อนไหวสวนทางกับดอลลาร์</li>
+                    <li><strong>อัตราดอกเบี้ย Fed:</strong> ดอกเบี้ยสูง = กดดันทองคำ</li>
+                    <li><strong>ทองคำเฟ้อ (CPI):</strong> ทองคำเฟ้อสูง = หนุนราคาทองคำ</li>
+                    <li><strong>ความตึงเครียดทางภูมิรัฐศาสตร์:</strong> เพิ่มความต้องการทองคำเป็น Safe Haven</li>
+                </ul>
+
+                <h2 id="risk-management">⚠️ การบริหารความเสี่ยง (Risk Management)</h2>
+
+                <div class="highlight-box">
+                    <h4>🛡️ กฎเหล็กของการบริหารความเสี่ยง</h4>
+                    <ol>
+                        <li><strong>ใช้ Stop Loss เสมอ:</strong> กำหนดจุดขาดทุนสูงสุดที่ยอมรับได้</li>
+                        <li><strong>Risk-Reward Ratio:</strong> ควรมีอัตราส่วนอย่างน้อย 1:2</li>
+                        <li><strong>ไม่ลงทุนเกินกำลัง:</strong> ใช้เลเวอเรจอย่างระมัดระวัง</li>
+                        <li><strong>กระจายความเสี่ยง:</strong> อย่าเอาทองคำทั้งหมดลงในออเดอร์เดียว</li>
+                        <li><strong>มีแผนการเทรด:</strong> วางแผน Entry, Exit, และ Stop Loss ล่วงหน้า</li>
+                    </ol>
+                </div>
+
+                <h2 id="getting-started">🚀 เริ่มต้นเทรดทองคำอย่างไร?</h2>
+
+                <ol>
+                    <li><strong>เรียนรู้พื้นฐาน:</strong> ศึกษาหลักการเทรดและปัจจัยที่ส่งผลต่อราคาทองคำ</li>
+                    <li><strong>เปิดบัญชีเทรด:</strong> เลือกโบรกเกอร์ที่มีความน่าเชื่อถือ</li>
+                    <li><strong>ฝึกฝนด้วย Demo Account:</strong> ทดลองเทรดด้วยทองคำเสมือนก่อน</li>
+                    <li><strong>เริ่มต้นด้วยทองคำน้อย:</strong> ลงทุนด้วยทองคำที่พร้อมเสีย</li>
+                    <li><strong>ติดตามและปรับปรุง:</strong> บันทึกการเทรดและเรียนรู้จากประสบการณ์</li>
+                </ol>
+
+                <h2 id="tools-platforms">📱 เครื่องมือและแพลตฟอร์มแนะนำ</h2>
+
+                <p>สำหรับการเทรดทองคำในยุคดิจิทัล มีเครื่องมือมากมายที่จะช่วยให้คุณเทรดได้อย่างมีประสิทธิภาพ:</p>
+
+                <ul>
+                    <li><strong>TradingView:</strong> แพลตฟอร์มวิเคราะห์ชาร์ตที่ทรงพลัง</li>
+                    <li><strong>MetaTrader 4/5:</strong> โปรแกรมเทรดที่ได้รับความนิยมสูงสุด</li>
+                    <li><strong>Trade Gold App:</strong> แอปพลิเคชันติดตามราคาทองคำแบบ Real-time</li>
+                    <li><strong>Economic Calendar:</strong> ปฏิทินเศรษฐกิจสำหรับติดตามข่าวสำคัญ</li>
+                </ul>
+
+                <h2 id="conclusion">✅ สรุป</h2>
+
+                <p>การเทรดทองคำเป็นทักษะที่สามารถเรียนรู้และพัฒนาได้ ไม่ว่าคุณจะเป็นมือใหม่หรือมืออาชีพ
+                    สิ่งสำคัญที่สุดคือการมีความรู้ มีวินัย และบริหารความเสี่ยงอย่างเหมาะสม
+                    เริ่มต้นด้วยการศึกษาอย่างถี่ถ้วน ฝึกฝนอย่างสม่ำเสมอ
+                    และอย่าลืมว่าการเทรดที่ประสบความสำเร็จต้องใช้เวลาและความอดทน</p>
+
+                <div class="highlight-box">
+                    <h4>🎓 พร้อมเริ่มต้นเทรดทองคำแล้วหรือยัง?</h4>
+                    <p>เปิดบัญชีกับ Trade Gold วันนี้ และรับฟรี! แนวทางการเทรดสำหรับมือใหม่ พร้อมทีมงานคอยให้คำปรึกษา
+                        24/7</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer-placeholder"></div>
+
+    <!-- Switch Button Placeholder -->
+    <div id="switch-button-placeholder"></div>
+
+    <!-- Mobile TOC Toggle Button -->
+    <button class="toc-toggle" id="tocToggle" aria-label="Toggle Table of Contents">
+        📋
+    </button>
+
+    <!-- Mobile TOC Overlay -->
+    <div class="toc-overlay" id="tocOverlay"></div>
+
+    <script>
+        // รอให้ DOM โหลดเสร็จก่อน
+        document.addEventListener('DOMContentLoaded', function () {
+            // Get article ID from URL parameter
+            const urlParams = new URLSearchParams(window.location.search);
+            const articleId = urlParams.get('id');
+
+            // Article data (in real application, this would come from API/database)
+            const articles = {
+                '1': {
+                    title: '101-คู่มือเทรดทองคำสำหรับมือใหม่',
+                    category: '📘 Guide Book',
+                    date: '22 ธันวาคม 2025',
+                    image: '📊'
+                },
+                '2': {
+                    title: 'วิเคราะห์ผลกระทบของนโยบายจีนต่อราคาทองคำ',
+                    category: '🇨🇳 Market Analysis',
+                    date: '20 ธันวาคม 2025',
+                    image: '🇨🇳🇹🇼'
+                },
+                '3': {
+                    title: 'ทำความเข้าใจทองคำแท่ง vs ทองรูปพรรณ',
+                    category: '💎 Gold Types',
+                    date: '18 ธันวาคม 2025',
+                    image: '💍'
+                },
+                '4': {
+                    title: 'เทคนิคการอ่านกราฟทองคำอย่างมืออาชีพ',
+                    category: '📊 Technical',
+                    date: '15 ธันวาคม 2025',
+                    image: '📈'
+                }
+            };
+
+            // Update article content if ID provided
+            if (articleId && articles[articleId]) {
+                const article = articles[articleId];
+                const titleElement = document.getElementById('articleTitle');
+                const dateElement = document.getElementById('articleDate');
+                const imageElement = document.getElementById('articleImage');
+                const categoryElement = document.querySelector('.article-category');
+
+                if (titleElement) titleElement.textContent = article.title;
+                if (dateElement) dateElement.textContent = article.date;
+                if (categoryElement) categoryElement.textContent = article.category;
+
+                // Set background image if URL is provided, otherwise keep gradient
+                if (article.imageUrl && imageElement) {
+                    imageElement.style.background = `url('${article.imageUrl}') center center / cover no-repeat`;
+                }
+            }
+
+            // Table of Contents functionality
+            const tocLinks = document.querySelectorAll('.toc-list a');
+            const sections = document.querySelectorAll('.article-content h2, .article-content h3');
+
+            // Dropdown toggle functionality
+            const toggleButtons = document.querySelectorAll('.toc-toggle-btn');
+            toggleButtons.forEach(button => {
+                button.addEventListener('click', function (e) {
+                    e.stopPropagation();
+                    e.preventDefault();
+
+                    // หา submenu ที่อยู่ใน parent li
+                    const parentLi = this.closest('.toc-item-parent');
+                    const submenu = parentLi.querySelector('.toc-submenu');
+
+                    if (submenu) {
+                        submenu.classList.toggle('collapsed');
+                        this.classList.toggle('collapsed');
+                    }
+                });
+            });
+
+            // Smooth scroll for anchor links
+            tocLinks.forEach(link => {
+                link.addEventListener('click', function (e) {
+                    e.preventDefault();
+
+                    // ลบ active class จากทุก link และ wrapper
+                    tocLinks.forEach(l => l.classList.remove('active'));
+                    document.querySelectorAll('.toc-parent-wrapper').forEach(w => w.classList.remove('active'));
+
+                    // เพิ่ม active class
+                    const parentWrapper = this.closest('.toc-parent-wrapper');
+                    if (parentWrapper) {
+                        // ถ้าเป็นหัวข้อที่มี dropdown ให้เพิ่ม active ที่ wrapper
+                        parentWrapper.classList.add('active');
+                    } else {
+                        // ถ้าเป็นหัวข้อธรรมดาให้เพิ่ม active ที่ link
+                        this.classList.add('active');
+                    }
+
+                    const targetId = this.getAttribute('href');
+                    const target = document.querySelector(targetId);
+
+                    if (target) {
+                        const offset = 120; // Offset for fixed header/navbar
+                        const targetPosition = target.getBoundingClientRect().top + window.pageYOffset - offset;
+
+                        window.scrollTo({
+                            top: targetPosition,
+                            behavior: 'smooth'
+                        });
+
+                        // Close mobile menu if open
+                        if (window.innerWidth <= 1024) {
+                            tocSidebar.classList.remove('active');
+                            tocOverlay.classList.remove('active');
+                        }
+                    }
+                });
+            });
+
+            // Highlight active section on scroll - ปิดการทำงาน
+            function highlightActiveSection() {
+                // ปิดการ auto-highlight เมื่อ scroll
+                // ให้แสดงกรอบเฉพาะตอนคลิกเท่านั้น
+                return;
+            }
+
+            // Update active section on scroll - ปิดการทำงาน
+            // window.addEventListener('scroll', highlightActiveSection);
+            // highlightActiveSection(); // Initial call
+
+            // Mobile TOC Toggle
+            const tocToggle = document.getElementById('tocToggle');
+            const tocSidebar = document.getElementById('tocSidebar');
+            const tocOverlay = document.getElementById('tocOverlay');
+
+            if (tocToggle) {
+                tocToggle.addEventListener('click', function () {
+                    tocSidebar.classList.toggle('active');
+                    tocOverlay.classList.toggle('active');
+                });
+            }
+
+            if (tocOverlay) {
+                tocOverlay.addEventListener('click', function () {
+                    tocSidebar.classList.remove('active');
+                    tocOverlay.classList.remove('active');
+                });
+            }
+        });
+    </script>
+
+    <!-- Load Shared Components Script -->
+    <script>
+        // Apps Script URL สำหรับดึงข้อมูลบทความ (สำหรับ Search Bar)
+        window.GUIDE_API_URL = 'https://script.google.com/macros/s/AKfycbzTIMUcEl49nXGRMQk_L_TI1XFD28gUNyMt0IXKVWnDiPnV5GorIEEPMswp-Gsv0r1Bhw/exec';
+
+        // โหลด Navbar และ Footer
+        fetch('index.html')
+            .then(response => response.text())
+            .then(html => {
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(html, 'text/html');
+
+                // ดึง Navbar Template
+                const navbarTemplate = doc.getElementById('navbar-template');
+                if (navbarTemplate) {
+                    const navbarContent = navbarTemplate.content.cloneNode(true);
+                    document.getElementById('navbar-placeholder').appendChild(navbarContent);
+
+                    // เพิ่ม active class
+                    const currentPage = window.location.pathname.split('/').pop().replace('.html', '') || 'home';
+                    const navLinks = document.querySelectorAll('.nav-menu a');
+                    navLinks.forEach(link => {
+                        const pageName = link.getAttribute('data-page');
+                        if (pageName === currentPage) {
+                            link.classList.add('active');
+                        }
+                    });
+                }
+
+                // ดึง Footer Template
+                const footerTemplate = doc.getElementById('footer-template');
+                if (footerTemplate) {
+                    const footerContent = footerTemplate.content.cloneNode(true);
+                    document.getElementById('footer-placeholder').appendChild(footerContent);
+                }
+
+
+                // ดึง Switch Button Template
+                const switchButtonTemplate = doc.getElementById('switch-button-template');
+                if (switchButtonTemplate) {
+                    const switchButtonContent = switchButtonTemplate.content.cloneNode(true);
+                    document.getElementById('switch-button-placeholder').appendChild(switchButtonContent);
+                    console.log('✅ Switch button loaded!');
+                }
+                // ดึง Styles
+                const sharedStyles = doc.getElementById('shared-styles');
+                if (sharedStyles && !document.getElementById('shared-styles-injected')) {
+                    const styleElement = document.createElement('style');
+                    styleElement.id = 'shared-styles-injected';
+                    styleElement.textContent = sharedStyles.textContent;
+                    document.head.appendChild(styleElement);
+                }
+
+                // ดึงและรัน Shared Components Script
+                const sharedScript = doc.getElementById('shared-components-script');
+                if (sharedScript && !window.sharedScriptLoaded) {
+                    console.log('Loading shared components script...');
+                    const scriptElement = document.createElement('script');
+                    scriptElement.textContent = sharedScript.textContent;
+                    document.body.appendChild(scriptElement);
+                    window.sharedScriptLoaded = true;
+                    console.log('✅ Shared components script loaded!');
+                }
+
+                // ฟังก์ชันสลับคำตาม Mode
+                setTimeout(() => {
+                    function updateTextByMode() {
+                        const isSilverMode = localStorage.getItem('tradeSiteMode') === 'silver';
+
+                        const textReplacements = {
+                            'ทองคำ': isSilverMode ? 'เงิน' : 'ทองคำ',
+                            'ทอง': isSilverMode ? 'เงิน' : 'ทอง',
+                            'Gold': isSilverMode ? 'Silver' : 'Gold'
+                        };
+
+                        function replaceText(element) {
+                            if (element.nodeType === Node.TEXT_NODE) {
+                                let text = element.textContent;
+                                let modified = false;
+
+                                for (const [oldText, newText] of Object.entries(textReplacements)) {
+                                    if (text.includes(oldText)) {
+                                        text = text.replace(new RegExp(oldText, 'g'), newText);
+                                        modified = true;
+                                    }
+                                }
+
+                                if (modified) {
+                                    element.textContent = text;
+                                }
+                            } else if (element.nodeType === Node.ELEMENT_NODE &&
+                                element.tagName !== 'SCRIPT' &&
+                                element.tagName !== 'STYLE' &&
+                                !element.classList.contains('no-translate')) {
+                                for (const child of element.childNodes) {
+                                    replaceText(child);
+                                }
+                            }
+                        }
+
+                        const mainContent = document.body;
+                        if (mainContent) {
+                            replaceText(mainContent);
+                        }
+
+                        console.log(`✅ Guide page text updated to ${isSilverMode ? 'Silver' : 'Gold'} mode`);
+                    }
+
+                    updateTextByMode();
+
+                    window.addEventListener('modeChanged', () => {
+                        updateTextByMode();
+                    });
+                }, 600);
+            })
+            .catch(error => console.error('Error loading components:', error));
+    </script>
+
+
+
+
+
+    </main><!-- #content -->
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-title">Contact</div>
+            <div class="footer-grid">
+                <!-- Line Contact -->
+                <div class="footer-item">
+                    <div class="footer-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewbox="0 0 24 24" fill="white">
+                            <path d="M12 2C6.48 2 2 6.48 2 12c0 5.52 4.48 10 10 10s10-4.48 10-10c0-5.52-4.48-10-10-10zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z"></path>
+                        </svg>
+                    </div>
+                    <div class="footer-text">
+                        <div>@555qutex</div>
+                    </div>
+                </div>
+                
+                <!-- Phone -->
+                <div class="footer-item">
+                    <div class="footer-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewbox="0 0 24 24" fill="white">
+                            <path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56-.35-.12-.74-.03-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z"></path>
+                        </svg>
+                    </div>
+                    <div class="footer-text">
+                        <div>02-xxx-xxxx, 02-xxx-xxxx</div>
+                    </div>
+                </div>
+                
+                <!-- Address -->
+                <div class="footer-item">
+                    <div class="footer-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewbox="0 0 24 24" fill="white">
+                            <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"></path>
+                        </svg>
+                    </div>
+                    <div class="footer-text">
+                        <div>1 ถนนราชดำริ ลุมพินี ปทุมวัน กรุงเทพมหานคร สีลม ซอย 22 ห้อง 2301 ชั้น 23 ถนนแวนเดอร์ แขวง</div>
+                        <div>สีลม เขตบางรัก กรุงเทพมหานคร 10500</div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div>copy right © 2026</div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Switch Website Button -->
+    <div class="switch-web-button" id="switchWebButton">
+        <div class="switch-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="17 1 21 5 17 9"></polyline>
+                <path d="M3 11V9a4 4 0 0 1 4-4h14"></path>
+                <polyline points="7 23 3 19 7 15"></polyline>
+                <path d="M21 13v2a4 4 0 0 1-4 4H3"></path>
+            </svg>
+        </div>
+        <span class="switch-text"><strong id="switchTargetText">Silver</strong></span>
+    </div>
+    
+</div><!-- #page -->
+
+<script type="speculationrules">
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"/trade-gold/*"},{"not":{"href_matches":["/trade-gold/wp-*.php","/trade-gold/wp-admin/*","/trade-gold/wp-content/uploads/*","/trade-gold/wp-content/*","/trade-gold/wp-content/plugins/*","/trade-gold/wp-content/themes/tradegold-theme/*","/trade-gold/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
+<script type="text/javascript" id="tradegold-script-js-extra">
+/* <![CDATA[ */
+var tradegoldAjax = {"ajaxurl":"/wp-admin/admin-ajax.php","nonce":"d7a85a183f"};
+//# sourceURL=tradegold-script-js-extra
+/* ]]> */
+</script>
+<script type="text/javascript" src="/wp-content/themes/tradegold-theme/js/theme.js?ver=3.0" id="tradegold-script-js"></script>
+<script id="wp-emoji-settings" type="application/json">
+{"baseUrl":"https://s.w.org/images/core/emoji/17.0.2/72x72/","ext":".png","svgUrl":"https://s.w.org/images/core/emoji/17.0.2/svg/","svgExt":".svg","source":{"concatemoji":"/wp-includes/js/wp-emoji-release.min.js?ver=6.9"}}
+</script>
+<script type="module">
+/* <![CDATA[ */
+/*! This file is auto-generated */
+const a=JSON.parse(document.getElementById("wp-emoji-settings").textContent),o=(window._wpemojiSettings=a,"wpEmojiSettingsSupports"),s=["flag","emoji"];function i(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(o,JSON.stringify(t))}catch(e){}}function c(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data);e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0);const a=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data);return t.every((e,t)=>e===a[t])}function p(e,t){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var n=e.getImageData(16,16,1,1);for(let e=0;e<n.data.length;e++)if(0!==n.data[e])return!1;return!0}function u(e,t,n,a){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\udde8\ud83c\uddf6","\ud83c\udde8\u200b\ud83c\uddf6")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!a(e,"\ud83e\u1fac8")}return!1}function f(e,t,n,a){let r;const o=(r="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):document.createElement("canvas")).getContext("2d",{willReadFrequently:!0}),s=(o.textBaseline="top",o.font="600 32px Arial",{});return e.forEach(e=>{s[e]=t(o,e,n,a)}),s}function r(e){var t=document.createElement("script");t.src=e,t.defer=!0,document.head.appendChild(t)}a.supports={everything:!0,everythingExceptFlag:!0},new Promise(t=>{let n=function(){try{var e=JSON.parse(sessionStorage.getItem(o));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+f.toString()+"("+[JSON.stringify(s),u.toString(),c.toString(),p.toString()].join(",")+"));",a=new Blob([e],{type:"text/javascript"});const r=new Worker(URL.createObjectURL(a),{name:"wpTestEmojiSupports"});return void(r.onmessage=e=>{i(n=e.data),r.terminate(),t(n)})}catch(e){}i(n=f(s,u,c,p))}t(n)}).then(e=>{for(const n in e)a.supports[n]=e[n],a.supports.everything=a.supports.everything&&a.supports[n],"flag"!==n&&(a.supports.everythingExceptFlag=a.supports.everythingExceptFlag&&a.supports[n]);var t;a.supports.everythingExceptFlag=a.supports.everythingExceptFlag&&!a.supports.flag,a.supports.everything||((t=a.source||{}).concatemoji?r(t.concatemoji):t.wpemoji&&t.twemoji&&(r(t.twemoji),r(t.wpemoji)))});
+//# sourceURL=/wp-includes/js/wp-emoji-loader.min.js
+/* ]]> */
+</script>
+
+</body>
+</html>
