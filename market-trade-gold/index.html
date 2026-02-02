@@ -352,6 +352,28 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
                 height: 300px !important;
             }
             .scroll-hint{display:block}
+            
+            /* Market Hours Responsive */
+            .market-hours-container{padding:1rem}
+            .market-hours-header h2{font-size:1.2rem}
+            .gantt-timeline{padding:1rem}
+            .timeline-header{grid-template-columns:120px repeat(24,minmax(30px,1fr))}
+            .timeline-label{padding:0.5rem;font-size:0.75rem}
+            .timeline-hour{padding:0.5rem 0.1rem;font-size:0.65rem}
+            .market-label{padding:0.5rem;font-size:0.75rem}
+            .market-label .flag{font-size:1rem}
+            .timeline-bar{font-size:0.7rem;padding:0.4rem 0.2rem}
+        }
+        
+        @media (max-width:480px){
+            .market-hours-header h2{font-size:1rem}
+            .gantt-timeline{padding:0.5rem}
+            .timeline-header{grid-template-columns:100px repeat(24,minmax(25px,1fr))}
+            .timeline-label{padding:0.4rem;font-size:0.7rem}
+            .timeline-hour{padding:0.4rem 0.05rem;font-size:0.6rem}
+            .market-label{padding:0.4rem;font-size:0.7rem;gap:0.3rem}
+            .market-label .flag{font-size:0.9rem}
+            .timeline-bar{font-size:0.65rem;padding:0.3rem 0.1rem}
         }
         
         /* ✅ FIXED: Legend text stays BLACK in all modes (Gold/Silver) */
