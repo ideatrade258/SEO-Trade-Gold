@@ -288,6 +288,15 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
         .bar-hongkong{background:linear-gradient(135deg,#6b21a8 0%,#581c87 100%);opacity:1}
         .bar-thailand{background:linear-gradient(135deg,#10b981 0%,#059669 100%)}
         .bar-japan{background:linear-gradient(135deg,#0ea5e9 0%,#0284c7 100%)}
+        
+        /* Tablet responsive */
+        @media (max-width: 1024px) {
+            .timeline-header{grid-template-columns:140px repeat(24,minmax(35px,1fr))}
+            .timeline-row{grid-template-columns:140px repeat(24,minmax(35px,1fr))}
+            .timeline-grid{grid-template-columns:repeat(24,minmax(35px,1fr))}
+            .timeline-cell{min-height:45px}
+            .timeline-bar{height:34px;font-size:0.7rem}
+        }
         .volatility-indicator{position:absolute;top:-5px;right:5px;width:12px;height:12px;border-radius:50%;border:2px solid var(--white);display:none}
         .vol-high{background:#dc2626;animation:pulse-high 2s infinite}
         .vol-medium{background:#f59e0b}
@@ -357,27 +366,30 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
             .market-hours-container{padding:0.8rem}
             .market-hours-header h2{font-size:1rem;gap:0.3rem}
             .gantt-timeline{padding:0.8rem;font-size:0.75rem}
-            .timeline-header{grid-template-columns:80px repeat(24,minmax(20px,1fr))}
+            .timeline-header{grid-template-columns:80px repeat(24,minmax(22px,1fr)) !important}
+            .timeline-row{grid-template-columns:80px repeat(24,minmax(22px,1fr)) !important}
+            .timeline-grid{grid-template-columns:repeat(24,minmax(22px,1fr)) !important}
             .timeline-label{padding:0.4rem 0.2rem;font-size:0.65rem}
             .timeline-hour{padding:0.4rem 0.1rem;font-size:0.55rem}
-            .timeline-row{font-size:0.75rem}
             .market-label{padding:0.4rem 0.3rem;font-size:0.65rem;gap:0.2rem}
             .market-label .flag{font-size:0.9rem}
-            .timeline-bar{font-size:0.6rem;padding:0.3rem 0.15rem;min-height:28px;line-height:1.2}
-            .timeline-grid{min-height:28px}
+            .timeline-cell{min-height:32px}
+            .timeline-bar{font-size:0.6rem;padding:0.3rem 0.15rem;height:26px;top:3px}
         }
         
         @media (max-width:480px){
             .market-hours-container{padding:0.5rem}
             .market-hours-header h2{font-size:0.85rem}
             .gantt-timeline{padding:0.5rem;font-size:0.7rem}
-            .timeline-header{grid-template-columns:70px repeat(24,minmax(18px,1fr))}
+            .timeline-header{grid-template-columns:70px repeat(24,minmax(18px,1fr)) !important}
+            .timeline-row{grid-template-columns:70px repeat(24,minmax(18px,1fr)) !important}
+            .timeline-grid{grid-template-columns:repeat(24,minmax(18px,1fr)) !important}
             .timeline-label{padding:0.3rem 0.15rem;font-size:0.6rem}
             .timeline-hour{padding:0.3rem 0.05rem;font-size:0.5rem}
             .market-label{padding:0.3rem 0.2rem;font-size:0.6rem;gap:0.15rem}
             .market-label .flag{font-size:0.8rem}
-            .timeline-bar{font-size:0.55rem;padding:0.25rem 0.1rem;min-height:24px;line-height:1.1}
-            .timeline-grid{min-height:24px}
+            .timeline-cell{min-height:28px}
+            .timeline-bar{font-size:0.55rem;padding:0.25rem 0.1rem;height:22px;top:3px}
         }
         
         /* ✅ FIXED: Legend text stays BLACK in all modes (Gold/Silver) */
