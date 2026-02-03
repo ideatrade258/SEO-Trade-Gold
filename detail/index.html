@@ -79,7 +79,173 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 		<style type="text/css" id="wp-custom-css">
 			.logo-image {
     display: none !important;
-}		</style>
+}
+
+/* ===== LEFT DRAWER MENU OVERRIDE ===== */
+
+/* Overlay backdrop */
+.drawer-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+    z-index: 998;
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+.drawer-overlay.active {
+    display: block;
+    opacity: 1;
+}
+
+/* Mobile menu → left drawer panel */
+.mobile-menu-dropdown {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 280px !important;
+    max-width: 75vw !important;
+    height: 100vh !important;
+    background: #fff !important;
+    box-shadow: 4px 0 20px rgba(0,0,0,0.2) !important;
+    z-index: 999 !important;
+    overflow-y: auto !important;
+    overflow-x: hidden !important;
+    transform: translateX(-100%) !important;
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+    display: block !important;
+    visibility: hidden !important;
+    padding: 0 !important;
+    flex-direction: column !important;
+}
+.mobile-menu-dropdown.active {
+    transform: translateX(0) !important;
+    visibility: visible !important;
+}
+
+/* Drawer header row */
+.drawer-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.2rem 1.25rem 0.8rem;
+    background: linear-gradient(135deg, #1E3A8A 0%, #1E40AF 100%);
+}
+.drawer-header .drawer-logo {
+    font-family: 'Kanit', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none;
+}
+.drawer-header .drawer-logo span { color: #EDBF43; }
+
+/* Close button */
+.mobile-menu-close {
+    width: 34px !important;
+    height: 34px !important;
+    border-radius: 50% !important;
+    border: none !important;
+    background: rgba(255,255,255,0.15) !important;
+    color: #fff !important;
+    font-size: 1.2rem !important;
+    cursor: pointer !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    transition: background 0.2s !important;
+    line-height: 1 !important;
+    padding: 0 !important;
+}
+.mobile-menu-close:hover { background: rgba(255,255,255,0.3) !important; }
+
+/* Search bar inside drawer */
+.mobile-menu-dropdown .search-bar-container {
+    padding: 1rem 1.25rem !important;
+    border-bottom: 1px solid #e9ecef !important;
+}
+.mobile-menu-dropdown .search-bar {
+    display: flex !important;
+    align-items: center !important;
+    gap: 0.5rem !important;
+    background: #f3f4f6 !important;
+    border-radius: 10px !important;
+    padding: 0.55rem 0.75rem !important;
+}
+.mobile-menu-dropdown .search-bar input {
+    flex: 1 !important;
+    border: none !important;
+    background: transparent !important;
+    outline: none !important;
+    font-size: 0.9rem !important;
+    font-family: 'Kanit', sans-serif !important;
+    color: #2c3e50 !important;
+}
+
+/* Nav links */
+.mobile-menu-dropdown .mobile-navigation { padding: 0.5rem 0 !important; }
+.mobile-menu-dropdown .mobile-menu {
+    list-style: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+.mobile-menu-dropdown .mobile-menu li { border-bottom: 1px solid #f0f0f0 !important; }
+.mobile-menu-dropdown .mobile-menu li:last-child { border-bottom: none !important; }
+.mobile-menu-dropdown .mobile-menu a {
+    display: flex !important;
+    align-items: center !important;
+    padding: 0.85rem 1.25rem !important;
+    color: #1E3A8A !important;
+    text-decoration: none !important;
+    font-size: 1rem !important;
+    font-weight: 500 !important;
+    font-family: 'Kanit', sans-serif !important;
+    transition: background 0.2s, padding-left 0.2s !important;
+}
+.mobile-menu-dropdown .mobile-menu a:hover {
+    background: #f0f4ff !important;
+    padding-left: 1.6rem !important;
+}
+.mobile-menu-dropdown .mobile-menu li.current-menu-item a {
+    background: linear-gradient(90deg, #EFF6FF, #fff) !important;
+    border-left: 3px solid #EDBF43 !important;
+    font-weight: 600 !important;
+}
+
+/* Sign-up button */
+.mobile-menu-dropdown .mobile-signup {
+    display: block !important;
+    margin: 1rem 1.25rem 1.5rem !important;
+    padding: 0.7rem 1rem !important;
+    text-align: center !important;
+    background: linear-gradient(135deg, #EDBF43 0%, #d4a017 100%) !important;
+    color: #fff !important;
+    font-weight: 700 !important;
+    font-size: 0.95rem !important;
+    border-radius: 10px !important;
+    text-decoration: none !important;
+    box-shadow: 0 3px 10px rgba(237,191,67,0.4) !important;
+    font-family: 'Kanit', sans-serif !important;
+}
+.mobile-menu-dropdown .mobile-signup:hover {
+    box-shadow: 0 5px 14px rgba(237,191,67,0.45) !important;
+}
+
+/* Search dropdown results */
+.mobile-menu-dropdown .search-dropdown {
+    position: absolute !important;
+    left: 0 !important;
+    right: 0 !important;
+    max-height: 220px !important;
+    overflow-y: auto !important;
+    background: #fff !important;
+    border-radius: 0 0 10px 10px !important;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.12) !important;
+    z-index: 1000 !important;
+}
+		</style>
 		</head>
 
 <body class="wp-singular page-template page-template-template-page-builder-no-sidebar page-template-template-page-builder-no-sidebar-php page page-id-104 wp-theme-tradegold-theme fpt-template fpt-template-tradegold-theme">
@@ -136,10 +302,16 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
                 เปิดบัญชี            </a>
         </div>
         
+        <!-- Drawer Overlay (backdrop) -->
+        <div class="drawer-overlay" id="drawerOverlay"></div>
+
         <!-- Mobile Menu Dropdown -->
         <div class="mobile-menu-dropdown" id="mobileMenuDropdown">
-            <!-- Close Button -->
-            <button class="mobile-menu-close" id="mobileMenuClose" aria-label="Close Menu">✕</button>
+            <!-- Drawer Header: Logo + Close -->
+            <div class="drawer-header">
+                <a href="/" class="drawer-logo">Trade <span>Gold</span></a>
+                <button class="mobile-menu-close" id="mobileMenuClose" aria-label="Close Menu">✕</button>
+            </div>
             
             <!-- Search Bar (Mobile) -->
             <div class="search-bar-container mobile-search">
@@ -211,165 +383,6 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
         @keyframes spin{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}
         .error-container{max-width:1200px;margin:4rem auto;padding:0 2rem}
         .error-content{background:#fee;border:2px solid #fcc;border-radius:15px;padding:2rem;text-align:center}
-
-        /* ===== Responsive ===== */
-
-        /* Tablet 1024px */
-        @media (max-width: 1024px) {
-            .nav-wrapper { gap: 1.5rem !important; padding: 0 1.5rem !important; }
-            .table-of-contents { width: 260px !important; }
-            .article-featured-image { height: 350px !important; padding: 2rem !important; }
-            .article-content { padding: 2.5rem !important; }
-            .article-content h2 { font-size: 1.7rem !important; }
-            .article-content h3 { font-size: 1.3rem !important; }
-        }
-
-        /* Mobile 768px */
-        @media (max-width: 768px) {
-            .breadcrumb {
-                margin: 1rem auto !important;
-                padding: 0 1rem !important;
-                font-size: 0.8rem !important;
-                flex-wrap: wrap !important;
-            }
-            .breadcrumb span#breadcrumbTitle {
-                overflow: hidden !important;
-                text-overflow: ellipsis !important;
-                white-space: nowrap !important;
-                max-width: 60% !important;
-            }
-
-            .nav-wrapper {
-                flex-direction: column !important;
-                padding: 0 1rem !important;
-                padding-top: 1rem !important;
-                gap: 0.75rem !important;
-            }
-
-            /* TOC → horizontal pill scroll */
-            .table-of-contents {
-                width: 100% !important;
-                position: static !important;
-                max-height: none !important;
-                padding: 0.75rem 1rem !important;
-                border-radius: 12px !important;
-                overflow-x: auto !important;
-                overflow-y: hidden !important;
-                box-shadow: 0 2px 8px rgba(0,0,0,0.08) !important;
-            }
-            .toc-title { display: none !important; }
-            .toc-list {
-                display: flex !important;
-                gap: 0.5rem !important;
-                padding: 0 !important;
-                flex-wrap: nowrap !important;
-            }
-            .toc-list li {
-                margin-bottom: 0 !important;
-                flex-shrink: 0 !important;
-            }
-            .toc-list a {
-                display: inline-block !important;
-                padding: 0.4rem 0.85rem !important;
-                font-size: 0.82rem !important;
-                white-space: nowrap !important;
-                background: var(--gray-light) !important;
-                border: 2px solid var(--gray-medium) !important;
-                border-radius: 20px !important;
-            }
-            .toc-list a:hover,
-            .toc-list a.active {
-                padding-left: 0.85rem !important;
-            }
-
-            .article-featured-image {
-                height: 240px !important;
-                padding: 1.5rem !important;
-                margin-bottom: -30px !important;
-                border-radius: 14px !important;
-            }
-            .article-category {
-                top: 10px !important;
-                right: 10px !important;
-                padding: 0.35rem 1rem !important;
-                font-size: 0.8rem !important;
-            }
-            .article-image-meta {
-                bottom: 10px !important;
-                right: 10px !important;
-                left: 10px !important;
-                justify-content: center !important;
-                gap: 1rem !important;
-                padding: 0.5rem 1rem !important;
-                font-size: 0.78rem !important;
-                border-radius: 30px !important;
-            }
-
-            .article-content { padding: 1.8rem 1.2rem !important; border-radius: 14px !important; }
-            .article-content h2 { font-size: 1.45rem !important; margin: 1.5rem 0 0.75rem !important; }
-            .article-content h3 { font-size: 1.15rem !important; margin: 1.2rem 0 0.6rem !important; }
-            .article-content p { font-size: 1rem !important; margin-bottom: 1rem !important; }
-        }
-
-        /* Small Mobile 480px — iPhone SE (375px) */
-        @media (max-width: 480px) {
-            .breadcrumb {
-                margin: 0.5rem auto !important;
-                padding: 0 0.75rem !important;
-                font-size: 0.72rem !important;
-                gap: 0.25rem !important;
-            }
-            /* Truncate the last breadcrumb item (article title) */
-            .breadcrumb span#breadcrumbTitle {
-                overflow: hidden !important;
-                text-overflow: ellipsis !important;
-                white-space: nowrap !important;
-                max-width: 55% !important;
-            }
-
-            .nav-wrapper {
-                padding: 0 0.6rem !important;
-                padding-top: 0.6rem !important;
-                gap: 0.6rem !important;
-            }
-
-            .table-of-contents {
-                padding: 0.6rem 0.75rem !important;
-                border-radius: 10px !important;
-            }
-            .toc-list { gap: 0.4rem !important; }
-            .toc-list a {
-                padding: 0.35rem 0.7rem !important;
-                font-size: 0.75rem !important;
-                border-radius: 16px !important;
-            }
-
-            .article-featured-image {
-                height: 180px !important;
-                padding: 1rem !important;
-                margin-bottom: -24px !important;
-                border-radius: 12px !important;
-            }
-            .article-category {
-                top: 8px !important;
-                right: 8px !important;
-                padding: 0.28rem 0.75rem !important;
-                font-size: 0.7rem !important;
-            }
-            .article-image-meta {
-                bottom: 8px !important;
-                right: 8px !important;
-                left: 8px !important;
-                padding: 0.35rem 0.7rem !important;
-                font-size: 0.7rem !important;
-                gap: 0.6rem !important;
-            }
-
-            .article-content { padding: 1.1rem 0.85rem !important; border-radius: 12px !important; }
-            .article-content h2 { font-size: 1.2rem !important; margin: 1rem 0 0.5rem !important; }
-            .article-content h3 { font-size: 1rem !important; margin: 0.85rem 0 0.45rem !important; }
-            .article-content p { font-size: 0.9rem !important; line-height: 1.65 !important; margin-bottom: 0.85rem !important; }
-        }
     </style>
 
 
@@ -756,6 +769,54 @@ var tradegoldAjax = {"ajaxurl":"/wp-admin/admin-ajax.php","nonce":"d7a85a183f"};
 const a=JSON.parse(document.getElementById("wp-emoji-settings").textContent),o=(window._wpemojiSettings=a,"wpEmojiSettingsSupports"),s=["flag","emoji"];function i(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(o,JSON.stringify(t))}catch(e){}}function c(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data);e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0);const a=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data);return t.every((e,t)=>e===a[t])}function p(e,t){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var n=e.getImageData(16,16,1,1);for(let e=0;e<n.data.length;e++)if(0!==n.data[e])return!1;return!0}function u(e,t,n,a){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\udde8\ud83c\uddf6","\ud83c\udde8\u200b\ud83c\uddf6")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!a(e,"\ud83e\u1fac8")}return!1}function f(e,t,n,a){let r;const o=(r="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):document.createElement("canvas")).getContext("2d",{willReadFrequently:!0}),s=(o.textBaseline="top",o.font="600 32px Arial",{});return e.forEach(e=>{s[e]=t(o,e,n,a)}),s}function r(e){var t=document.createElement("script");t.src=e,t.defer=!0,document.head.appendChild(t)}a.supports={everything:!0,everythingExceptFlag:!0},new Promise(t=>{let n=function(){try{var e=JSON.parse(sessionStorage.getItem(o));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+f.toString()+"("+[JSON.stringify(s),u.toString(),c.toString(),p.toString()].join(",")+"));",a=new Blob([e],{type:"text/javascript"});const r=new Worker(URL.createObjectURL(a),{name:"wpTestEmojiSupports"});return void(r.onmessage=e=>{i(n=e.data),r.terminate(),t(n)})}catch(e){}i(n=f(s,u,c,p))}t(n)}).then(e=>{for(const n in e)a.supports[n]=e[n],a.supports.everything=a.supports.everything&&a.supports[n],"flag"!==n&&(a.supports.everythingExceptFlag=a.supports.everythingExceptFlag&&a.supports[n]);var t;a.supports.everythingExceptFlag=a.supports.everythingExceptFlag&&!a.supports.flag,a.supports.everything||((t=a.source||{}).concatemoji?r(t.concatemoji):t.wpemoji&&t.twemoji&&(r(t.twemoji),r(t.wpemoji)))});
 //# sourceURL=/wp-includes/js/wp-emoji-loader.min.js
 /* ]]> */
+</script>
+
+<script>
+// ===== DRAWER OVERLAY SYNC =====
+// theme.js toggles .active on #mobileMenuDropdown — we watch that and sync the overlay
+(function() {
+    var drawer   = document.getElementById('mobileMenuDropdown');
+    var overlay  = document.getElementById('drawerOverlay');
+    if (!drawer || !overlay) return;
+
+    // --- helper: open / close overlay ---
+    function showOverlay() { overlay.classList.add('active'); }
+    function hideOverlay() { overlay.classList.remove('active'); }
+    function closeDrawer()  {
+        drawer.classList.remove('active');
+        hideOverlay();
+    }
+
+    // --- click overlay → close ---
+    overlay.addEventListener('click', closeDrawer);
+
+    // --- Escape key → close ---
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && drawer.classList.contains('active')) closeDrawer();
+    });
+
+    // --- MutationObserver: watch .active class on drawer (set by theme.js) ---
+    var obs = new MutationObserver(function(mutations) {
+        mutations.forEach(function(m) {
+            if (m.attributeName === 'class') {
+                if (drawer.classList.contains('active')) {
+                    showOverlay();
+                    document.body.style.overflow = 'hidden'; // lock scroll
+                } else {
+                    hideOverlay();
+                    document.body.style.overflow = '';
+                }
+            }
+        });
+    });
+    obs.observe(drawer, { attributes: true });
+
+    // --- also patch mobileMenuClose btn just in case theme.js doesn't handle it fully ---
+    var closeBtn = document.getElementById('mobileMenuClose');
+    if (closeBtn) {
+        closeBtn.addEventListener('click', closeDrawer);
+    }
+})();
 </script>
 
 </body>
