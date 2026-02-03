@@ -260,25 +260,25 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
         }
         
         /* Market Hours Timeline */
-        .market-hours-container{background:var(--white);border-radius:15px;padding:clamp(0.5rem, 2vw, 2rem);box-shadow:0 2px 10px rgba(0,0,0,0.05);margin-bottom:2rem}
+        .market-hours-container{background:var(--white);border-radius:15px;padding:2rem;box-shadow:0 2px 10px rgba(0,0,0,0.05);margin-bottom:2rem}
         .market-hours-header{margin-bottom:2rem}
-        .market-hours-header h2{color:var(--navy);font-size:clamp(0.85rem, 2vw, 1.8rem);display:flex;align-items:center;gap:clamp(0.3rem, 0.5vw, 0.5rem)}
-        .gantt-timeline{background:var(--gray-light);border-radius:12px;padding:clamp(0.5rem, 2vw, 1.5rem);overflow-x:auto;position:relative}
+        .market-hours-header h2{color:var(--navy);font-size:1.8rem;display:flex;align-items:center;gap:0.5rem}
+        .gantt-timeline{background:var(--gray-light);border-radius:12px;padding:1.5rem;overflow-x:auto;position:relative}
         .gantt-timeline::-webkit-scrollbar{height:8px}
         .gantt-timeline::-webkit-scrollbar-track{background:#f1f1f1;border-radius:10px}
         .gantt-timeline::-webkit-scrollbar-thumb{background:var(--gold-primary);border-radius:10px}
         .gantt-timeline::-webkit-scrollbar-thumb:hover{background:var(--gold-dark)}
         .scroll-hint{display:none;text-align:center;padding:0.5rem;color:var(--navy);font-size:0.8rem;opacity:0.7;margin-top:0.5rem}
         
-        .timeline-header{display:grid;grid-template-columns:clamp(70px, 12vw, 180px) repeat(24,minmax(clamp(18px, 2.5vw, 40px),1fr));gap:0;margin-bottom:1rem}
-        .timeline-label{background:var(--navy);color:var(--white);padding:clamp(0.3rem, 1vw, 0.75rem);font-weight:600;text-align:center;border-right:1px solid var(--white);font-size:clamp(0.6rem, 1.2vw, 0.9rem)}
-        .timeline-hour{background:var(--navy);color:var(--white);padding:clamp(0.3rem, 1vw, 0.75rem) clamp(0.05rem, 0.5vw, 0.15rem);font-size:clamp(0.5rem, 1vw, 0.75rem);text-align:center;border-right:1px solid var(--white);font-weight:500}
-        .timeline-row{display:grid;grid-template-columns:clamp(70px, 12vw, 180px) repeat(24,minmax(clamp(18px, 2.5vw, 40px),1fr));gap:0;margin-bottom:0.5rem;position:relative}
-        .market-label{background:var(--white);padding:clamp(0.3rem, 1vw, 0.75rem);font-weight:600;color:var(--navy);display:flex;align-items:center;gap:clamp(0.15rem, 0.5vw, 0.5rem);border:1px solid var(--gray-medium);border-radius:8px 0 0 8px;font-size:clamp(0.6rem, 1.2vw, 0.9rem)}
-        .market-label .flag{font-size:clamp(0.8rem, 1.5vw, 1.3rem)}
-        .timeline-grid{display:grid;grid-template-columns:repeat(24,minmax(clamp(18px, 2.5vw, 40px),1fr));grid-column:2 / -1;position:relative}
-        .timeline-cell{border-right:1px solid #e0e0e0;border-bottom:1px solid #e0e0e0;background:var(--white);min-height:clamp(28px, 5vw, 50px)}
-        .timeline-bar{position:absolute;height:clamp(22px, 4vw, 38px);top:clamp(3px, 0.5vw, 6px);border-radius:8px;display:flex;align-items:center;justify-content:center;color:var(--white);font-weight:600;font-size:clamp(0.55rem, 1vw, 0.75rem);box-shadow:0 2px 8px rgba(0,0,0,0.15);transition:all 0.3s;cursor:pointer}
+        .timeline-header{display:grid;grid-template-columns:180px repeat(24,minmax(40px,1fr));gap:0;margin-bottom:1rem}
+        .timeline-label{background:var(--navy);color:var(--white);padding:0.75rem;font-weight:600;text-align:center;border-right:1px solid var(--white)}
+        .timeline-hour{background:var(--navy);color:var(--white);padding:0.75rem 0.15rem;font-size:0.75rem;text-align:center;border-right:1px solid var(--white);font-weight:500}
+        .timeline-row{display:grid;grid-template-columns:180px repeat(24,minmax(40px,1fr));gap:0;margin-bottom:0.5rem;position:relative}
+        .market-label{background:var(--white);padding:0.75rem;font-weight:600;color:var(--navy);display:flex;align-items:center;gap:0.5rem;border:1px solid var(--gray-medium);border-radius:8px 0 0 8px;font-size:0.9rem}
+        .market-label .flag{font-size:1.3rem}
+        .timeline-grid{display:grid;grid-template-columns:repeat(24,minmax(40px,1fr));grid-column:2 / -1;position:relative}
+        .timeline-cell{border-right:1px solid #e0e0e0;border-bottom:1px solid #e0e0e0;background:var(--white);min-height:50px}
+        .timeline-bar{position:absolute;height:38px;top:6px;border-radius:8px;display:flex;align-items:center;justify-content:center;color:var(--white);font-weight:600;font-size:0.75rem;box-shadow:0 2px 8px rgba(0,0,0,0.15);transition:all 0.3s;cursor:pointer}
         .timeline-bar:hover{transform:translateY(-2px);box-shadow:0 4px 12px rgba(0,0,0,0.25)}
         .bar-usa{background:linear-gradient(135deg,#dc2626 0%,#991b1b 100%)}
         .bar-uk{background:linear-gradient(135deg,#fbbf24 0%,#f59e0b 100%)}
@@ -325,6 +325,9 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
         .modal-section h3{color:var(--navy);font-size:1.2rem;margin-bottom:0.75rem;display:flex;align-items:center;gap:0.5rem}
         .modal-section p{color:#666;line-height:1.6;margin-bottom:0.5rem}
         .volatility-display{display:inline-flex;align-items:center;gap:0.5rem;padding:0.5rem 1rem;border-radius:25px;font-weight:600}
+        .volatility-display.volatility-low{background:#d1fae5;color:#059669}
+        .volatility-display.volatility-medium{background:#fef3c7;color:#d97706}
+        .volatility-display.volatility-high{background:#fee2e2;color:#dc2626}
         .peak-time-list{background:var(--gray-light);padding:1rem;border-radius:10px;border-left:4px solid var(--gold-primary)}
         .peak-time-list li{color:var(--text-dark);margin-bottom:0.5rem}
         .factors-list{list-style:none;padding:0}
@@ -809,7 +812,7 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
             });
         });
 
-        // Market data (abbreviated for space - include full data from original)
+        // ===== GOLD Market Data =====
         const marketDataGold = {
             japan: {
                 flag: '🇯🇵',
@@ -817,14 +820,229 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
                 time: '06:00 - 15:00 น.',
                 volatility: 'ต่ำ - ปานกลาง',
                 volatilityClass: 'volatility-low',
-                peakTime: '07:00 – 09:00 น.',
+                peakTime: '07:00 – 09:00 น. (เปิดตลาดเอเชีย)',
                 factors: [
                     'ตลาดแรกของเอเชียที่เริ่มขยับ',
                     'สภาพคล่องยังไม่สูงมาก',
                     'ค่าเงินเยน (JPY) มีผลต่อราคา'
                 ]
             },
-            // ... (include all other markets)
+            shanghai: {
+                flag: '🇨🇳',
+                name: 'เซี่ยงไฮ้ (Shanghai Gold Exchange)',
+                time: '08:00 - 14:30 น. / 19:00 - 01:30 น.',
+                volatility: 'ปานกลาง',
+                volatilityClass: 'volatility-medium',
+                peakTime: '08:00 – 10:00 น. และ 19:00 – 21:00 น.',
+                factors: [
+                    'ตลาดทองคำของจีนมีความต้องการสูง',
+                    'สกุลเงิน Yuan (CNY) มีผลต่อราคา',
+                    'นโยบายธนาคารcentral Bank of China มีความสำคัญ',
+                    'การเปิดตลาดเวลา 19:00 มีการซื้อขายหนักมาก'
+                ]
+            },
+            hongkong: {
+                flag: '🇭🇰',
+                name: 'ฮ่องกง (CGSE)',
+                time: '24 ชั่วโมง (Electronic Trading)',
+                volatility: 'ปานกลาง - สูง',
+                volatilityClass: 'volatility-medium',
+                peakTime: '08:00 – 10:00 น. และ 20:00 – 22:00 น.',
+                factors: [
+                    'เปิดตลาดตลอด 24 ชั่วโมงแบบ Electronic',
+                    'เป็นตลาดหลักของเอเชียตะวันออก',
+                    'รับอิทธิพลจากตลาดจีน (Shanghai) มาก',
+                    'สกุลเงิน HKD แบบ Peg กับ USD มีผลน้อย'
+                ]
+            },
+            singapore: {
+                flag: '🇸🇬',
+                name: 'สิงคโปร์ (SGX)',
+                time: '08:00 - 16:00 น.',
+                volatility: 'ต่ำ - ปานกลาง',
+                volatilityClass: 'volatility-low',
+                peakTime: '09:00 – 11:00 น.',
+                factors: [
+                    'เป็น Hub การเทรดของเอเชียตะวันออกเฉียงใต้',
+                    'สภาพคล่องปานกลาง',
+                    'สกุลเงิน SGD มีความเคลื่อนที่พอสมควร',
+                    'รับอิทธิพลจากตลาดจีนและญี่ปุ่น'
+                ]
+            },
+            thailand: {
+                flag: '🇹🇭',
+                name: 'ไทย (TFEX - Bangkok)',
+                time: '09:20 - 17:00 น.',
+                volatility: 'ต่ำ - ปานกลาง',
+                volatilityClass: 'volatility-low',
+                peakTime: '09:20 – 11:00 น. (เปิดตลาด)',
+                factors: [
+                    'TFEX เปิดตลาดทองคำ Gold Futures',
+                    'ราคาทองใน กทม. อิงราคาตลาดโลก + ค่าเงิน USD/THB',
+                    'ค่าเงินบาท (THB) มีผลต่อราคาทองในประเทศ',
+                    'นักลงทุนไทยมีความต้องการทองคำสูง'
+                ]
+            },
+            europe: {
+                flag: '🇪🇺',
+                name: 'ยุโรป (Frankfurt)',
+                time: '14:00 - 22:00 น.',
+                volatility: 'สูง',
+                volatilityClass: 'volatility-high',
+                peakTime: '14:00 – 16:00 น. (เปิดตลาดยุโรป)',
+                factors: [
+                    'เปิดตลาดยุโรปทำให้สภาพคล่องเพิ่มมาก',
+                    'ราคา EUR มีผลต่อราคาทอง XAUEUR',
+                    'นโยบาย ECB (European Central Bank) สำคัญ',
+                    'เเรียบเเสงจากตลาดอเมริกาที่เปิดตามกันมา'
+                ]
+            },
+            london: {
+                flag: '🇬🇧',
+                name: 'ลอนดอน (LBMA Gold)',
+                time: '14:00 - 23:00 น.',
+                volatility: 'สูง',
+                volatilityClass: 'volatility-high',
+                peakTime: '14:30 – 16:00 น. (PM Gold Fix)',
+                factors: [
+                    'LBMA เป็นตลาดอ้างอิงราคาทองคำหลักของโลก',
+                    'Gold Fix ตอนบ่าย (PM Fix) เป็นราคาอ้างอิงสำคัญ',
+                    'สกุลเงิน GBP มีผลต่อราคา XAUGBP',
+                    'ปริมาณการซื้อขายสูงมากในช่วงนี้',
+                    'Bank of England นโยบายมีผลต่อตลาด'
+                ]
+            },
+            usa: {
+                flag: '🇺🇸',
+                name: 'อเมริกา (COMEX - New York)',
+                time: '19:00 - 04:00 น. (วันถัดไป)',
+                volatility: 'สูงสุด',
+                volatilityClass: 'volatility-high',
+                peakTime: '19:30 – 21:30 น. (เปิดตลาด NY)',
+                factors: [
+                    'COMEX เป็นตลาดทองคำ Futures หลักของโลก',
+                    'สกุลเงิน USD มีผลต่อราคาทองมากที่สุด',
+                    'Federal Reserve (Fed) นโยบายมีผลใหญ่มาก',
+                    'ตัวเลข NFP, CPI เปิดตัวในช่วงนี้',
+                    'สภาพคล่องสูงสุดในช่วงเวลานี้'
+                ]
+            }
+        };
+
+        // ===== SILVER Market Data =====
+        const marketDataSilver = {
+            japan: {
+                flag: '🇯🇵',
+                name: 'ญี่ปุ่น (Tokyo)',
+                time: '06:00 - 15:00 น.',
+                volatility: 'ต่ำ - ปานกลาง',
+                volatilityClass: 'volatility-low',
+                peakTime: '07:00 – 09:00 น. (เปิดตลาดเอเชีย)',
+                factors: [
+                    'ตลาดเงินเป็นตลาดแรกของเอเชียที่เริ่มขยับ',
+                    'สภาพคล่องยังไม่สูงมากในช่วงเช้า',
+                    'ค่าเงินเยน (JPY) มีผลต่อราคาเงิน'
+                ]
+            },
+            shanghai: {
+                flag: '🇨🇳',
+                name: 'เซี่ยงไฮ้ (Shanghai Futures)',
+                time: '08:00 - 14:30 น. / 19:00 - 01:30 น.',
+                volatility: 'ปานกลาง',
+                volatilityClass: 'volatility-medium',
+                peakTime: '08:00 – 10:00 น. และ 19:00 – 21:00 น.',
+                factors: [
+                    'จีนเป็นผู้บริโภคเงินอุตสาหกรรมรายใหญ่',
+                    'สกุลเงิน Yuan (CNY) มีผลต่อราคาเงิน',
+                    'ความต้องการเงินจากอุตสาหกรรมจีนสูง',
+                    'การเปิดตลาดเวลา 19:00 มีการซื้อขายหนัก'
+                ]
+            },
+            hongkong: {
+                flag: '🇭🇰',
+                name: 'ฮ่องกง (CGSE)',
+                time: '24 ชั่วโมง (Electronic Trading)',
+                volatility: 'ปานกลาง - สูง',
+                volatilityClass: 'volatility-medium',
+                peakTime: '08:00 – 10:00 น. และ 20:00 – 22:00 น.',
+                factors: [
+                    'เปิดตลาดเงินตลอด 24 ชั่วโมงแบบ Electronic',
+                    'เป็น Hub การเทรดเงินของเอเชีย',
+                    'รับอิทธิพลจากตลาดจีน (Shanghai) มาก',
+                    'การใช้เงินทางอุตสาหกรรมมีผลต่อราคา'
+                ]
+            },
+            singapore: {
+                flag: '🇸🇬',
+                name: 'สิงคโปร์ (SGX)',
+                time: '08:00 - 16:00 น.',
+                volatility: 'ต่ำ - ปานกลาง',
+                volatilityClass: 'volatility-low',
+                peakTime: '09:00 – 11:00 น.',
+                factors: [
+                    'เป็น Hub การเทรดเงินของเอเนยตะวันออกเฉียงใต้',
+                    'อุตสาหกรรมอิเล็กทรอนิกส์ต้องการเงินมาก',
+                    'สกุลเงิน SGD มีความเคลื่อนที่พอสมควร',
+                    'รับอิทธิพลจากตลาดจีนและญี่ปุ่น'
+                ]
+            },
+            thailand: {
+                flag: '🇹🇭',
+                name: 'ไทย (TFEX - Bangkok)',
+                time: '09:20 - 17:00 น.',
+                volatility: 'ต่ำ - ปานกลาง',
+                volatilityClass: 'volatility-low',
+                peakTime: '09:20 – 11:00 น. (เปิดตลาด)',
+                factors: [
+                    'เงินมีการซื้อขายน้อยกว่าทองในไทย',
+                    'ราคาเงินในไทย อิงราคาโลก + ค่าเงิน USD/THB',
+                    'ค่าเงินบาท (THB) มีผลต่อราคาเงินในประเทศ',
+                    'ความต้องการเงินจากอุตสาหกรรมไทย'
+                ]
+            },
+            europe: {
+                flag: '🇪🇺',
+                name: 'ยุโรป (Frankfurt)',
+                time: '14:00 - 22:00 น.',
+                volatility: 'สูง',
+                volatilityClass: 'volatility-high',
+                peakTime: '14:00 – 16:00 น. (เปิดตลาดยุโรป)',
+                factors: [
+                    'เปิดตลาดยุโรปทำให้สภาพคล่องเงินเพิ่มมาก',
+                    'อุตสาหกรรมยุโรปใช้เงินเยอะ',
+                    'นโยบาย ECB มีผลต่อราคาเงิน',
+                    'ราคา EUR มีผลต่อราคาเงิน XAGEUR'
+                ]
+            },
+            london: {
+                flag: '🇬🇧',
+                name: 'ลอนดอน (LBMA Silver)',
+                time: '14:00 - 23:00 น.',
+                volatility: 'สูง',
+                volatilityClass: 'volatility-high',
+                peakTime: '15:00 น. (Silver Fix)',
+                factors: [
+                    'LBMA Silver Fix เป็นราคาอ้างอิงหลักของเงินโลก',
+                    'ปริมาณการซื้อขายเงินสูงมากในช่วงนี้',
+                    'สกุลเงิน GBP มีผลต่อราคา XAGGBP',
+                    'อุตสาหกรรมอิเล็กทรอนิกส์ UK มีความต้องการเงิน'
+                ]
+            },
+            usa: {
+                flag: '🇺🇸',
+                name: 'อเมริกา (COMEX - New York)',
+                time: '19:00 - 04:00 น. (วันถัดไป)',
+                volatility: 'สูงสุด',
+                volatilityClass: 'volatility-high',
+                peakTime: '19:30 – 21:30 น. (เปิดตลาด NY)',
+                factors: [
+                    'COMEX เป็นตลาดเงิน Futures หลักของโลก',
+                    'สกุลเงิน USD มีผลต่อราคาเงินมากที่สุด',
+                    'Fed นโยบายดอกเบี้ยมีผลต่อราคาเงิน',
+                    'อุตสาหกรรมอิเล็กทรอนิกส์ สหรัฐ ใช้เงินมาก',
+                    'สภาพคล่องสูงสุดในช่วงเวลานี้'
+                ]
+            }
         };
 
         function getCurrentMarketData() {
